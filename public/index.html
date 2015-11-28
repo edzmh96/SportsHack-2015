@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hype Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive" style="color:OrangeRed; font-size:1000%">
+                  <img src="images/cfl_logo.png" alt="cfl_img" class="h1-img">
+                  ViewParty
+                </h1>
+                <h4>
+                  Watch your favourite games with others like yourself. 
+                </h4>
+                <span class="typedelement"></span>
+                <hr>
+                <a href="#find" class="btn btn-primary btn-xl">Find</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl">Get Started</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" muted class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" id="video-background">
+            <source src="video/intro.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </header>
+
+
+
+    <!-- scripts loaded here -->
+    <script src="jquery.js"></script>
+    <script src="typed.js"></script>
+    <script>
+    $(function(){
+      $(".update-box p").typed({
+        strings:$scope.updates,
+        typeSpeed: 40,
+        loop: true,
+        backDelay: 1500,
+        contentType: 'text',
+        loopCount: false,
+        cursorChar: " |"
+      });
+    });
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>

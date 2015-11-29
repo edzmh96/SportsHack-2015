@@ -74,7 +74,7 @@
                     console.log("AJAX call success!");
                     console.log(res);
 
-                    $("#linkEventPage").attr("href", "eventPage?id=" + res.insertedIds[0]);
+                    $("#linkEventPage").attr("href", "/gameEventsPage.html?id=" + res.insertedIds[0]);
 
                   }).fail(function(err){
                     console.log(err);

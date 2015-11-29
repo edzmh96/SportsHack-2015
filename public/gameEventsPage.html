@@ -79,20 +79,30 @@
 
     <div class="container">
       <div id="info_block" class="list-group-item list-group" style="margin-top:20px">
-        <h1 class="list-group-item-heading"> Your Event : Saskatchewan Something vs Hamilton Tiger Cats</h1>
-        <h4 class="list-group-item-text"> Number of attendees: 20 / 200 </h4>
-        <h4 class="list-group-item-text"> When it is: 7th December, 7pm - 8pm</h4>
+        <h1 id="event_name" class="list-group-item-heading"> </h1>
+        <h4 id="attendee_count" class="list-group-item-text"></h4>
       </div>
 
       <div id="event_image" class="list-group">
-        <h1 id="restaurant_name" class="list-group-item-heading"> San Angel Bar and Grill</h1>
-        <img src="http://virtualvallarta.com/images/entertainment/restaurants/vivapage/7169-2.jpg"
+        <h1 id="restaurant_name" class="list-group-item-heading"></h1>
+        <img id="restaurant_photo" src="http://virtualvallarta.com/images/entertainment/restaurants/vivapage/7169-2.jpg"
           style="width:500px;height:350px;margin-top:20px">
 
       </div>
       <div id="map_location" class="list-group">
         <h1 id="location" class="list-group-item-heading"> Where it is </h1>
-        <img src="https://i.gyazo.com/93549cab186ce3d6017ea4e0ddd5d80f.png" style="width:400px;height:350px;margin-top:20px">
+        <div id="map" style="width:400px;height:350px;margin-top:20px">
+
+        </div>
+        <!--<img src="https://i.gyazo.com/93549cab186ce3d6017ea4e0ddd5d80f.png" style="width:400px;height:350px;margin-top:20px"> -->
+      </div>
+      <div class="container attending">
+        <h1>Are you attending?</h1>
+        <span>
+          <button>yes</button>
+          <button>no</button>
+        </span>
+
       </div>
     </div>
 
@@ -110,21 +120,120 @@
         float:right;
         margin-top: 20px;
       }
+      .attending{
+        float:left;
+        margin-bottom: 10px;
+      }
     </style>
 
 
 
 
-
-
-
-    <script src="javascript/app.js"</script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <script type="text/javascript">
+      var event_id = undefined;
+      document.addEventListener('DOMContentLoaded', loadEventId, false);
+      function getQueryStringValue (key) {  
+       return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+      }  
+
+var eventLoaded =   false;
+var googleLoade = false;
+var latitute;
+var longitude;
+      function loadEventId(){
+        event_id = { "id" : getQueryStringValue("id") };
+        $.ajax
+                ({
+                  type: "POST",
+                  url: '/get_event_id',
+                  data: event_id,
+                  dataType: "JSON"
+                }).done(function (res)
+                  {
+                    console.log("AJAX call success!");
+                    console.log(res);
+                    $("#event_name").html(res.event_name);
+                    $("#attendee_count").html("Number of people attending " + res.number_of_customers + " / " + res.capacity_of_restaraunt);
+                    $("#restaurant_name").html(res.restaraunt_name);
+                    $("#restaurant_photo").attr("src", res.image_url);
+         
+                    latitute = res.restaraunt_lat
+                    longitude = res.restaraunt_long
+
+                    if (googleLoade)
+                    {
+
+                        var marker = new google.maps.Marker({
+                        position: {lat: latitute, lng: longitude},
+                        map: map,
+                        draggable: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                        });
+
+                    map.setCenter(marker.getPosition())
+
+                    }          
+ eventLoaded = true;
+                  }).fail(function(err){
+                    console.log(err);
+                    alert("Please try again!");
+                  });
+      }
+
+    </script>
+
+    <script>
+
+    var map = {};
+    var geocoder = {};
+    var searchBox = {};
+    var inputBox = {};
+    function focusOnSelectedEvent() {
+        $("#listEvents").find("li:selected").focus();
+    }
+
+    function initMap() {
+        var myLatLng = {lat: 43.2500, lng: -79.8667};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng,
+            streetViewControl: false
+        });
+
+      
+        if (eventLoaded)
+        {
+    var marker = new google.maps.Marker({
+                        position: {lat: latitute, lng: longitude},
+                        map: map,
+                        draggable: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                        });
+          map.setCenter(marker.getPosition())
+
+        }
+        googleLoade = true;
+        // Create the search box and link it to the UI element.
+        
+
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        
+
+
+        geocoder = new google.maps.Geocoder;
+
+    }
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArEnkPX8RTQdsmgqsgokZ3PdTk7dcme1Q&signed_in=false&libraries=places&callback=initMap"></script>
 
   </body>
 

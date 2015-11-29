@@ -43,6 +43,21 @@ router.post('/create_event', function(req, res, next) {
 
 });
 
+router.post('/get_event_id', function(req, res, next){
+  var event_id = req.body.id;
+  api.return_object_by_id(event_id, function(err, data){
+    if (err != null) {
+      console.log("ERROR: adding event.")
+      res.status(404);
+      res.end();
+    } else {
+      res.send(data);
+      console.log("Succesfully added event.")
+    }
+  });
+
+});
+
 
 //
 

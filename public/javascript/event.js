@@ -12,11 +12,13 @@ app.filter('filterTest', function () {
 })
 
 app.controller('mainCtrl', [
-    '$scope', function ($scope) {
+    '$scope', "$http", function ($scope, $http) {
         $scope.place = "Hamilton, ON, Canada";
         $scope.showPeopleStats = false;
         $scope.cflQtdPeople = 0;
 
+        $scope.lat = 43.2500;
+        $scope.long = -79.8660914
         $scope.customMarkers = [];
 
         function getLocation(storeLocation, showError) {
@@ -98,24 +100,46 @@ app.controller('mainCtrl', [
         function getEventByLocation(options, callBack) {
 
             //callBack("Failed!", "");
-            var fakeData = {
-                "_id": "565a485fc6037020ac326129",
-                "restaurant_name": "Endzone Bar & Grill",
-                "restaurant_long": -79.807365,
-                "restaurant_lat": 43.2311,
-                "capacity_of_restaurant": 75,
-                "number_of_customers": 75,
-                "event_name": "Ti-Cats at Home vs. Winnepeg",
-                "Date": "8/9/2016",
-                "Time": "5:00:00 PM",
-                "event_id": 9,
-                "image_url": "http://www.yelp.ca/biz_photos/endzone-bar-and-grill-hamilton?select=uMw-RrUfbdmWV4IKWS4ISg",
-                "yelp_url": "http://www.yelp.ca/biz/endzone-bar-and-grill-hamilton"
-            };
+            //var fakeData = {
+            //    "_id": "565a485fc6037020ac326129",
+            //    "restaurant_name": "Endzone Bar & Grill",
+            //    "restaurant_long": -79.807365,
+            //    "restaurant_lat": 43.2311,
+            //    "capacity_of_restaurant": 75,
+            //    "number_of_customers": 75,
+            //    "event_name": "Ti-Cats at Home vs. Winnepeg",
+            //    "Date": "8/9/2016",
+            //    "Time": "5:00:00 PM",
+            //    "event_id": 9,
+            //    "image_url": "http://www.yelp.ca/biz_photos/endzone-bar-and-grill-hamilton?select=uMw-RrUfbdmWV4IKWS4ISg",
+            //    "yelp_url": "http://www.yelp.ca/biz/endzone-bar-and-grill-hamilton"
+            //};
+            //
+            //var result = {eventData: [fakeData], peopleQtd: 100};
+            //
+            //callBack(undefined, result);
 
-            var result = {eventData: [fakeData], peopleQtd: 100};
+            function getQueryStringValue (key) {
+                return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+            }
+            var gameId = getQueryStringValue("id");
 
-            callBack(undefined, result);
+            $http({
+                method: 'POST',
+                url: '/game-events/getFiltered',
+                data : {
+                    lat : $scope.lat,
+                    long : $scope.long,
+                    gameId : gameId
+                }
+            }).then(function successCallback(response) {
+
+                callBack(undefined, response);
+
+            }, function errorCallback(response) {
+                console.log(response);
+               callBack("Sorry, the service is not available.");
+            });
             return;
         }
 
@@ -139,6 +163,9 @@ app.controller('mainCtrl', [
                 }
                 return;
             }
+
+            console.log(data);
+            return;
 
             $scope.cflQtdPeople = data.peopleQtd;
             $scope.showPeopleStats = true;

@@ -31,10 +31,19 @@ router.post('/create_event', function(req, res, next) {
   api.add_event(obj, function(err, data){
   	if (err != null) {
   		console.log("ERROR: adding event.")
+      res.status(404);
+      res.end();
   	} else {
+      console.log(data.ops[2]);
+      res.send(data);
   		console.log("Succesfully added event.")
   	}
   })
+
+
 });
+
+
+//
 
 module.exports = router;

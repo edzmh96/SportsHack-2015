@@ -1,0 +1,1015 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled emoji-size-boost">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>ionicons/ionicons.min.css at master · driftyco/ionicons</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="driftyco/ionicons" name="twitter:title" /><meta content="ionicons - The premium icon font for Ionic" name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/3171503?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/3171503?v=3&amp;s=400" property="og:image" /><meta content="driftyco/ionicons" property="og:title" /><meta content="https://github.com/driftyco/ionicons" property="og:url" /><meta content="ionicons - The premium icon font for Ionic" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MTAzMjI2Mjc6NGYzNDIwNGVkZTMzODJmMjRmMTYwNjFkMjYyNTYyMmI6NmRjNDNjYTJhYzYyYWY3MzFhMDQyNThjOGY4NzdmNmU1ZDFmMjg0NjQ2MWU0M2RmNzJlNTU0MTEyYmRjZmY5ZQ==--7ff9a23bdbc7e3345102236f423177c0bced5dd8">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="CF17D355:17DC:13448FB0:565ABB78" name="octolytics-dimension-request_id" /><meta content="10322627" name="octolytics-actor-id" /><meta content="edzmh96" name="octolytics-actor-login" /><meta content="070515e1372755019dd373ca12214b289339ed03bfbb005a8f97dda01f5ffef6" name="octolytics-actor-hash" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+<meta content="Rails, view, blob#show" data-pjax-transient="true" name="analytics-event" />
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+    <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+
+
+
+
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="edzmh96">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="92453a23264c0fc5b348473ce8b097b77fd09c7a" name="form-nonce" />
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3698fb0adc53fda9a2672a02c3fa3b20b89480f2a47ce38216b21cf3eb5b4750.css" integrity="sha256-Npj7CtxT/amiZyoCw/o7ILiUgPKkfOOCFrIc8+tbR1A=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-912fc0b3ba75b656d2d1687e8be122647344ab57d955de8f6635ee88161cf450.css" integrity="sha256-kS/As7p1tlbS0Wh+i+EiZHNEq1fZVd6PZjXuiBYc9FA=" media="all" rel="stylesheet" />
+    
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="dd39fae7621416ea1170f4f42e76f703">
+
+      
+  <meta name="description" content="ionicons - The premium icon font for Ionic">
+  <meta name="go-import" content="github.com/driftyco/ionicons git https://github.com/driftyco/ionicons.git">
+
+  <meta content="3171503" name="octolytics-dimension-user_id" /><meta content="driftyco" name="octolytics-dimension-user_login" /><meta content="13473768" name="octolytics-dimension-repository_id" /><meta content="driftyco/ionicons" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="13473768" name="octolytics-dimension-repository_network_root_id" /><meta content="driftyco/ionicons" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/driftyco/ionicons/commits/master.atom" rel="alternate" title="Recent Commits to ionicons:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_in   env-production macintosh vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search" role="search">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/driftyco/ionicons/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/driftyco/ionicons/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+      </div>
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a href="/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item">
+      <span class="js-socket-channel js-updatable-content"
+        data-channel="notification-changed:edzmh96"
+        data-url="/notifications/header">
+      <a href="/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:read" data-hotkey="g n">
+          <span class="mail-status all-read"></span>
+          <span class="octicon octicon-bell"></span>
+</a>  </span>
+
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="/new"
+       aria-label="Create new…"
+       data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus left"></span>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="driftyco/ionicons">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/driftyco/ionicons/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-s js-menu-target" href="/edzmh96"
+       aria-label="View profile and more"
+       data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@edzmh96" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/10322627?v=3&amp;s=40" width="20" />
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu  dropdown-menu-sw">
+        <div class=" dropdown-header header-nav-current-user css-truncate">
+            Signed in as <strong class="css-truncate-target">edzmh96</strong>
+
+        </div>
+
+
+        <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="/edzmh96" data-ga-click="Header, go to profile, text:your profile">
+            Your profile
+          </a>
+        <a class="dropdown-item" href="/stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+        <a class="dropdown-item" href="/explore" data-ga-click="Header, go to explore, text:explore">
+          Explore
+        </a>
+          <a class="dropdown-item" href="/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+            Settings
+          </a>
+
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="esvTtSPb1G2Oln7UDw/hMuUVOS/tNpIqOZ2OUipauYmGHpnR/aUhVcB5DaUvexufKU3iZJcz+2yp/WViLoV5sQ==" /></div>
+            <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+              Sign out
+            </button>
+</form>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+    
+  </div>
+</div>
+
+      
+
+      
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+
+      <div class="container">
+
+        <div class="clearfix">
+          
+
+<ul class="pagehead-actions">
+
+  <li>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="BWQVkwjrRmNsHEOjRA5Ta9tJ4Q53fAW9MQlR6U0qYCpzSfVuTug0tnZjlS2smh2XnJLc7avu36FO/NmPgBUKhw==" /></div>      <input id="repository_id" name="repository_id" type="hidden" value="13473768" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/driftyco/ionicons/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+              <span class="octicon octicon-eye"></span>
+              Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="/driftyco/ionicons/watchers">
+            339
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header">
+              <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <span class="select-menu-item-icon octicon octicon-check"></span>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <span class="octicon octicon-eye"></span>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <span class="octicon octicon-eye"></span>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <span class="select-menu-item-icon octicon octicon-check"></span>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <span class="octicon octicon-mute"></span>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/driftyco/ionicons/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="PRu074iYK6nkP5nWI86AK2ivtZ9zkuWg1zcz/5ZwMJ8Voqp4H9TWTmighg9oaM1aCkirhJtP4XTOgfwyuVazaA==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar driftyco/ionicons"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/driftyco/ionicons/stargazers">
+          7,980
+        </a>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/driftyco/ionicons/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xPk6C5Wnbmu3gRAjxfOVwSAkwMTxHolgNWkqZs+6Pj1YIMzsMTIFKuI8r+AZ+icfxf0oETdA1lzaz5GsiHKWXQ==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star driftyco/ionicons"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/driftyco/ionicons/stargazers">
+          7,980
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <a href="#fork-destination-box" class="btn btn-sm btn-with-count"
+              title="Fork your own copy of driftyco/ionicons to your account"
+              aria-label="Fork your own copy of driftyco/ionicons to your account"
+              rel="facebox"
+              data-ga-click="Repository, show fork modal, action:blob#show; text:Fork">
+            <span class="octicon octicon-repo-forked"></span>
+            Fork
+          </a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header" data-facebox-id="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src=""
+                class="js-fork-select-fragment fork-select-fragment"
+                data-url="/driftyco/ionicons/fork?fragment=1">
+              <img alt="Loading" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" />
+            </include-fragment>
+          </div>
+
+    <a href="/driftyco/ionicons/network" class="social-count">
+      789
+    </a>
+  </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/driftyco" class="url fn" itemprop="url" rel="author"><span itemprop="title">driftyco</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/driftyco/ionicons" data-pjax="#js-repo-pjax-container">ionicons</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/driftyco/ionicons/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/driftyco/ionicons" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /driftyco/ionicons">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/driftyco/ionicons/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /driftyco/ionicons/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/driftyco/ionicons/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /driftyco/ionicons/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/driftyco/ionicons/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /driftyco/ionicons/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/driftyco/ionicons/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /driftyco/ionicons/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/driftyco/ionicons/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /driftyco/ionicons/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3 class="text-small text-muted"><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/driftyco/ionicons.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="ssh">
+  <h3 class="text-small text-muted"><span class="text-emphasized">SSH</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="git@github.com:driftyco/ionicons.git" readonly="readonly" aria-label="SSH clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3 class="text-small text-muted"><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/driftyco/ionicons" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<div class="clone-options text-small text-muted">You can clone with
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3ZABZ3Mx9x9jS9WZR0mVwhy2U4qew67A+vTRck21ow3rTC+nwZfowiGNnjvYrer8YSJVcZTz6Y4REfY0FdoDQg==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form>, <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wO12U39Uthh2APOxgMQO4FEzewrr+Jqc+McVBmryiFu7eq/UqAMSNsFf8j932raj0Ett3E8XoXAnX6glFI4Geg==" /></div><button class="btn-link js-clone-selector" data-protocol="ssh" type="submit">SSH</button></form>, or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jNP6b8+8itlF5RLi4Ppl6I24S7RHGBVBRN5Ftgzzrap2CP79Pvva4SW5kUwSyXy7FCvXhY4qeSQkDF4seoRZ9A==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</div>
+  <a href="github-mac://openRepo/https://github.com/driftyco/ionicons" class="btn btn-sm sidebar-button" title="Save driftyco/ionicons to your computer and use it in GitHub Desktop." aria-label="Save driftyco/ionicons to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-desktop-download"></span>
+    Clone in Desktop
+  </a>
+
+              <a href="/driftyco/ionicons/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of driftyco/ionicons as a zip file"
+                 title="Download the contents of driftyco/ionicons as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<a href="/driftyco/ionicons/blob/a40523f14c22f4701c845b1708afcfb364601509/css/ionicons.min.css" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:0f499e9eee9f1b3a386e35e1da6f3550 -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/driftyco/ionicons/blob/3.0/css/ionicons.min.css"
+               data-name="3.0"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="3.0">
+                3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/driftyco/ionicons/blob/gh-pages/css/ionicons.min.css"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/driftyco/ionicons/blob/master/css/ionicons.min.css"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v2.0.1/css/ionicons.min.css"
+                 data-name="v2.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v2.0.1">v2.0.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v2.0.0/css/ionicons.min.css"
+                 data-name="v2.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v2.0.0">v2.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.5.2/css/ionicons.min.css"
+                 data-name="v1.5.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.5.2">v1.5.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.5.1/css/ionicons.min.css"
+                 data-name="v1.5.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.5.1">v1.5.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.5.0/css/ionicons.min.css"
+                 data-name="v1.5.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.5.0">v1.5.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.4.1/css/ionicons.min.css"
+                 data-name="v1.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.1">v1.4.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.4.0/css/ionicons.min.css"
+                 data-name="v1.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.0">v1.4.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.7/css/ionicons.min.css"
+                 data-name="v1.3.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.7">v1.3.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.6/css/ionicons.min.css"
+                 data-name="v1.3.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.6">v1.3.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.5/css/ionicons.min.css"
+                 data-name="v1.3.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.5">v1.3.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.4/css/ionicons.min.css"
+                 data-name="v1.3.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.4">v1.3.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.3/css/ionicons.min.css"
+                 data-name="v1.3.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.3">v1.3.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.2/css/ionicons.min.css"
+                 data-name="v1.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.2">v1.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.1/css/ionicons.min.css"
+                 data-name="v1.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.1">v1.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.3.0/css/ionicons.min.css"
+                 data-name="v1.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.0">v1.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.2.3/css/ionicons.min.css"
+                 data-name="v1.2.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.2.3">v1.2.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.2.2/css/ionicons.min.css"
+                 data-name="v1.2.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.2.2">v1.2.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.2.1/css/ionicons.min.css"
+                 data-name="v1.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.2.1">v1.2.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.2/css/ionicons.min.css"
+                 data-name="v1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.2">v1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.1/css/ionicons.min.css"
+                 data-name="v1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1">v1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/driftyco/ionicons/tree/v1.0/css/ionicons.min.css"
+                 data-name="v1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.0">v1.0</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="btn-group right">
+      <a href="/driftyco/ionicons/find/master"
+            class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-nw"
+            data-pjax
+            data-hotkey="t"
+            aria-label="Quickly jump between files">
+        <span class="octicon octicon-list-unordered"></span>
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </div>
+
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/driftyco/ionicons" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">ionicons</span></a></span></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/driftyco/ionicons/tree/master/css" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">css</span></a></span><span class="separator">/</span><strong class="final-path">ionicons.min.css</strong>
+    </div>
+  </div>
+
+
+  <div class="commit-tease">
+      <span class="right">
+        <a class="commit-tease-sha" href="/driftyco/ionicons/commit/a40523f14c22f4701c845b1708afcfb364601509" data-pjax>
+          a40523f
+        </a>
+        <time datetime="2015-01-15T04:42:49Z" is="relative-time">Jan 14, 2015</time>
+      </span>
+      <div>
+        <img alt="@adamdbradley" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/452425?v=3&amp;s=40" width="20" />
+        <a href="/adamdbradley" class="user-mention" rel="contributor">adamdbradley</a>
+          <a href="/driftyco/ionicons/commit/a40523f14c22f4701c845b1708afcfb364601509" class="message" data-pjax="true" title="v2.0.1">v2.0.1</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <a class="muted-link contributors-toggle" href="#blob_contributors_box" rel="facebox">
+        <strong>3</strong>
+         contributors
+      </a>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="adamdbradley" href="/driftyco/ionicons/commits/master/css/ionicons.min.css?author=adamdbradley"><img alt="@adamdbradley" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/452425?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="2metres" href="/driftyco/ionicons/commits/master/css/ionicons.min.css?author=2metres"><img alt="@2metres" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/924528?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="somethingnew2-0" href="/driftyco/ionicons/commits/master/css/ionicons.min.css?author=somethingnew2-0"><img alt="@somethingnew2-0" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/1957198?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@adamdbradley" height="24" src="https://avatars1.githubusercontent.com/u/452425?v=3&amp;s=48" width="24" />
+            <a href="/adamdbradley">adamdbradley</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@2metres" height="24" src="https://avatars3.githubusercontent.com/u/924528?v=3&amp;s=48" width="24" />
+            <a href="/2metres">2metres</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@somethingnew2-0" height="24" src="https://avatars0.githubusercontent.com/u/1957198?v=3&amp;s=48" width="24" />
+            <a href="/somethingnew2-0">somethingnew2-0</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="btn-group">
+      <a href="/driftyco/ionicons/raw/master/css/ionicons.min.css" class="btn btn-sm " id="raw-url">Raw</a>
+        <a href="/driftyco/ionicons/blame/master/css/ionicons.min.css" class="btn btn-sm js-update-url-with-hash">Blame</a>
+      <a href="/driftyco/ionicons/commits/master/css/ionicons.min.css" class="btn btn-sm " rel="nofollow">History</a>
+    </div>
+
+        <a class="octicon-btn tooltipped tooltipped-nw"
+           href="github-mac://openRepo/https://github.com/driftyco/ionicons?branch=master&amp;filepath=css%2Fionicons.min.css"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <span class="octicon octicon-device-desktop"></span>
+        </a>
+
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/driftyco/ionicons/edit/master/css/ionicons.min.css" class="inline-form js-update-url-with-hash" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="aMD18JygHb2ZkfB1ITKlj9Wu/3/u5jkzYR6zt5KBzUUTgB5QhWaRcHhqPoOOA7vvJKGCiGGXCaLaOvIH2F0J7w==" /></div>
+          <button class="octicon-btn tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+            <span class="octicon octicon-pencil"></span>
+          </button>
+</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/driftyco/ionicons/delete/master/css/ionicons.min.css" class="inline-form" data-form-nonce="92453a23264c0fc5b348473ce8b097b77fd09c7a" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="cFFNtGG2pZPi1dR9JmddZOLRyTf9uOLT4neagwIAyymGnDU5kljftWhxV0PVjnrgwZnSkppDINIjyi/KEVqK7w==" /></div>
+          <button class="octicon-btn octicon-btn-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <span class="octicon octicon-trashcan"></span>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      12 lines (10 sloc)
+      <span class="file-info-divider"></span>
+    50.1 KB
+  </div>
+</div>
+
+  
+
+  <div class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@charset</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UTF-8<span class="pl-pds">&quot;</span></span>;<span class="pl-c">/*!</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  Ionicons, v2.0.1</span></td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  https://twitter.com/benjsperry  https://twitter.com/ionicframework</span></td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  MIT License: https://github.com/driftyco/ionicons</span></td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  Android-style icons originally built by Google’s</span></td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  Material Design Icons: https://github.com/google/material-design-icons</span></td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  used under CC BY http://creativecommons.org/licenses/by/4.0/</span></td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  Modified icons to fit ionicon’s grid from original.</span></td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c">*/@font-face{font-family:&quot;Ionicons&quot;;src:url(&quot;../fonts/ionicons.eot?v=2.0.1&quot;);src:url(&quot;../fonts/ionicons.eot?v=2.0.1#iefix&quot;) format(&quot;embedded-opentype&quot;),url(&quot;../fonts/ionicons.ttf?v=2.0.1&quot;) format(&quot;truetype&quot;),url(&quot;../fonts/ionicons.woff?v=2.0.1&quot;) format(&quot;woff&quot;),url(&quot;../fonts/ionicons.svg?v=2.0.1#Ionicons&quot;) format(&quot;svg&quot;);font-weight:normal;font-style:normal}.ion,.ionicons,.ion-alert:before,.ion-alert-circled:before,.ion-android-add:before,.ion-android-add-circle:before,.ion-android-alarm-clock:before,.ion-android-alert:before,.ion-android-apps:before,.ion-android-archive:before,.ion-android-arrow-back:before,.ion-android-arrow-down:before,.ion-android-arrow-dropdown:before,.ion-android-arrow-dropdown-circle:before,.ion-android-arrow-dropleft:before,.ion-android-arrow-dropleft-circle:before,.ion-android-arrow-dropright:before,.ion-android-arrow-dropright-circle:before,.ion-android-arrow-dropup:before,.ion-android-arrow-dropup-circle:before,.ion-android-arrow-forward:before,.ion-android-arrow-up:before,.ion-android-attach:before,.ion-android-bar:before,.ion-android-bicycle:before,.ion-android-boat:before,.ion-android-bookmark:before,.ion-android-bulb:before,.ion-android-bus:before,.ion-android-calendar:before,.ion-android-call:before,.ion-android-camera:before,.ion-android-cancel:before,.ion-android-car:before,.ion-android-cart:before,.ion-android-chat:before,.ion-android-checkbox:before,.ion-android-checkbox-blank:before,.ion-android-checkbox-outline:before,.ion-android-checkbox-outline-blank:before,.ion-android-checkmark-circle:before,.ion-android-clipboard:before,.ion-android-close:before,.ion-android-cloud:before,.ion-android-cloud-circle:before,.ion-android-cloud-done:before,.ion-android-cloud-outline:before,.ion-android-color-palette:before,.ion-android-compass:before,.ion-android-contact:before,.ion-android-contacts:before,.ion-android-contract:before,.ion-android-create:before,.ion-android-delete:before,.ion-android-desktop:before,.ion-android-document:before,.ion-android-done:before,.ion-android-done-all:before,.ion-android-download:before,.ion-android-drafts:before,.ion-android-exit:before,.ion-android-expand:before,.ion-android-favorite:before,.ion-android-favorite-outline:before,.ion-android-film:before,.ion-android-folder:before,.ion-android-folder-open:before,.ion-android-funnel:before,.ion-android-globe:before,.ion-android-hand:before,.ion-android-hangout:before,.ion-android-happy:before,.ion-android-home:before,.ion-android-image:before,.ion-android-laptop:before,.ion-android-list:before,.ion-android-locate:before,.ion-android-lock:before,.ion-android-mail:before,.ion-android-map:before,.ion-android-menu:before,.ion-android-microphone:before,.ion-android-microphone-off:before,.ion-android-more-horizontal:before,.ion-android-more-vertical:before,.ion-android-navigate:before,.ion-android-notifications:before,.ion-android-notifications-none:before,.ion-android-notifications-off:before,.ion-android-open:before,.ion-android-options:before,.ion-android-people:before,.ion-android-person:before,.ion-android-person-add:before,.ion-android-phone-landscape:before,.ion-android-phone-portrait:before,.ion-android-pin:before,.ion-android-plane:before,.ion-android-playstore:before,.ion-android-print:before,.ion-android-radio-button-off:before,.ion-android-radio-button-on:before,.ion-android-refresh:before,.ion-android-remove:before,.ion-android-remove-circle:before,.ion-android-restaurant:before,.ion-android-sad:before,.ion-android-search:before,.ion-android-send:before,.ion-android-settings:before,.ion-android-share:before,.ion-android-share-alt:before,.ion-android-star:before,.ion-android-star-half:before,.ion-android-star-outline:before,.ion-android-stopwatch:before,.ion-android-subway:before,.ion-android-sunny:before,.ion-android-sync:before,.ion-android-textsms:before,.ion-android-time:before,.ion-android-train:before,.ion-android-unlock:before,.ion-android-upload:before,.ion-android-volume-down:before,.ion-android-volume-mute:before,.ion-android-volume-off:before,.ion-android-volume-up:before,.ion-android-walk:before,.ion-android-warning:before,.ion-android-watch:before,.ion-android-wifi:before,.ion-aperture:before,.ion-archive:before,.ion-arrow-down-a:before,.ion-arrow-down-b:before,.ion-arrow-down-c:before,.ion-arrow-expand:before,.ion-arrow-graph-down-left:before,.ion-arrow-graph-down-right:before,.ion-arrow-graph-up-left:before,.ion-arrow-graph-up-right:before,.ion-arrow-left-a:before,.ion-arrow-left-b:before,.ion-arrow-left-c:before,.ion-arrow-move:before,.ion-arrow-resize:before,.ion-arrow-return-left:before,.ion-arrow-return-right:before,.ion-arrow-right-a:before,.ion-arrow-right-b:before,.ion-arrow-right-c:before,.ion-arrow-shrink:before,.ion-arrow-swap:before,.ion-arrow-up-a:before,.ion-arrow-up-b:before,.ion-arrow-up-c:before,.ion-asterisk:before,.ion-at:before,.ion-backspace:before,.ion-backspace-outline:before,.ion-bag:before,.ion-battery-charging:before,.ion-battery-empty:before,.ion-battery-full:before,.ion-battery-half:before,.ion-battery-low:before,.ion-beaker:before,.ion-beer:before,.ion-bluetooth:before,.ion-bonfire:before,.ion-bookmark:before,.ion-bowtie:before,.ion-briefcase:before,.ion-bug:before,.ion-calculator:before,.ion-calendar:before,.ion-camera:before,.ion-card:before,.ion-cash:before,.ion-chatbox:before,.ion-chatbox-working:before,.ion-chatboxes:before,.ion-chatbubble:before,.ion-chatbubble-working:before,.ion-chatbubbles:before,.ion-checkmark:before,.ion-checkmark-circled:before,.ion-checkmark-round:before,.ion-chevron-down:before,.ion-chevron-left:before,.ion-chevron-right:before,.ion-chevron-up:before,.ion-clipboard:before,.ion-clock:before,.ion-close:before,.ion-close-circled:before,.ion-close-round:before,.ion-closed-captioning:before,.ion-cloud:before,.ion-code:before,.ion-code-download:before,.ion-code-working:before,.ion-coffee:before,.ion-compass:before,.ion-compose:before,.ion-connection-bars:before,.ion-contrast:before,.ion-crop:before,.ion-cube:before,.ion-disc:before,.ion-document:before,.ion-document-text:before,.ion-drag:before,.ion-earth:before,.ion-easel:before,.ion-edit:before,.ion-egg:before,.ion-eject:before,.ion-email:before,.ion-email-unread:before,.ion-erlenmeyer-flask:before,.ion-erlenmeyer-flask-bubbles:before,.ion-eye:before,.ion-eye-disabled:before,.ion-female:before,.ion-filing:before,.ion-film-marker:before,.ion-fireball:before,.ion-flag:before,.ion-flame:before,.ion-flash:before,.ion-flash-off:before,.ion-folder:before,.ion-fork:before,.ion-fork-repo:before,.ion-forward:before,.ion-funnel:before,.ion-gear-a:before,.ion-gear-b:before,.ion-grid:before,.ion-hammer:before,.ion-happy:before,.ion-happy-outline:before,.ion-headphone:before,.ion-heart:before,.ion-heart-broken:before,.ion-help:before,.ion-help-buoy:before,.ion-help-circled:before,.ion-home:before,.ion-icecream:before,.ion-image:before,.ion-images:before,.ion-information:before,.ion-information-circled:before,.ion-ionic:before,.ion-ios-alarm:before,.ion-ios-alarm-outline:before,.ion-ios-albums:before,.ion-ios-albums-outline:before,.ion-ios-americanfootball:before,.ion-ios-americanfootball-outline:before,.ion-ios-analytics:before,.ion-ios-analytics-outline:before,.ion-ios-arrow-back:before,.ion-ios-arrow-down:before,.ion-ios-arrow-forward:before,.ion-ios-arrow-left:before,.ion-ios-arrow-right:before,.ion-ios-arrow-thin-down:before,.ion-ios-arrow-thin-left:before,.ion-ios-arrow-thin-right:before,.ion-ios-arrow-thin-up:before,.ion-ios-arrow-up:before,.ion-ios-at:before,.ion-ios-at-outline:before,.ion-ios-barcode:before,.ion-ios-barcode-outline:before,.ion-ios-baseball:before,.ion-ios-baseball-outline:before,.ion-ios-basketball:before,.ion-ios-basketball-outline:before,.ion-ios-bell:before,.ion-ios-bell-outline:before,.ion-ios-body:before,.ion-ios-body-outline:before,.ion-ios-bolt:before,.ion-ios-bolt-outline:before,.ion-ios-book:before,.ion-ios-book-outline:before,.ion-ios-bookmarks:before,.ion-ios-bookmarks-outline:before,.ion-ios-box:before,.ion-ios-box-outline:before,.ion-ios-briefcase:before,.ion-ios-briefcase-outline:before,.ion-ios-browsers:before,.ion-ios-browsers-outline:before,.ion-ios-calculator:before,.ion-ios-calculator-outline:before,.ion-ios-calendar:before,.ion-ios-calendar-outline:before,.ion-ios-camera:before,.ion-ios-camera-outline:before,.ion-ios-cart:before,.ion-ios-cart-outline:before,.ion-ios-chatboxes:before,.ion-ios-chatboxes-outline:before,.ion-ios-chatbubble:before,.ion-ios-chatbubble-outline:before,.ion-ios-checkmark:before,.ion-ios-checkmark-empty:before,.ion-ios-checkmark-outline:before,.ion-ios-circle-filled:before,.ion-ios-circle-outline:before,.ion-ios-clock:before,.ion-ios-clock-outline:before,.ion-ios-close:before,.ion-ios-close-empty:before,.ion-ios-close-outline:before,.ion-ios-cloud:before,.ion-ios-cloud-download:before,.ion-ios-cloud-download-outline:before,.ion-ios-cloud-outline:before,.ion-ios-cloud-upload:before,.ion-ios-cloud-upload-outline:before,.ion-ios-cloudy:before,.ion-ios-cloudy-night:before,.ion-ios-cloudy-night-outline:before,.ion-ios-cloudy-outline:before,.ion-ios-cog:before,.ion-ios-cog-outline:before,.ion-ios-color-filter:before,.ion-ios-color-filter-outline:before,.ion-ios-color-wand:before,.ion-ios-color-wand-outline:before,.ion-ios-compose:before,.ion-ios-compose-outline:before,.ion-ios-contact:before,.ion-ios-contact-outline:before,.ion-ios-copy:before,.ion-ios-copy-outline:before,.ion-ios-crop:before,.ion-ios-crop-strong:before,.ion-ios-download:before,.ion-ios-download-outline:before,.ion-ios-drag:before,.ion-ios-email:before,.ion-ios-email-outline:before,.ion-ios-eye:before,.ion-ios-eye-outline:before,.ion-ios-fastforward:before,.ion-ios-fastforward-outline:before,.ion-ios-filing:before,.ion-ios-filing-outline:before,.ion-ios-film:before,.ion-ios-film-outline:before,.ion-ios-flag:before,.ion-ios-flag-outline:before,.ion-ios-flame:before,.ion-ios-flame-outline:before,.ion-ios-flask:before,.ion-ios-flask-outline:before,.ion-ios-flower:before,.ion-ios-flower-outline:before,.ion-ios-folder:before,.ion-ios-folder-outline:before,.ion-ios-football:before,.ion-ios-football-outline:before,.ion-ios-game-controller-a:before,.ion-ios-game-controller-a-outline:before,.ion-ios-game-controller-b:before,.ion-ios-game-controller-b-outline:before,.ion-ios-gear:before,.ion-ios-gear-outline:before,.ion-ios-glasses:before,.ion-ios-glasses-outline:before,.ion-ios-grid-view:before,.ion-ios-grid-view-outline:before,.ion-ios-heart:before,.ion-ios-heart-outline:before,.ion-ios-help:before,.ion-ios-help-empty:before,.ion-ios-help-outline:before,.ion-ios-home:before,.ion-ios-home-outline:before,.ion-ios-infinite:before,.ion-ios-infinite-outline:before,.ion-ios-information:before,.ion-ios-information-empty:before,.ion-ios-information-outline:before,.ion-ios-ionic-outline:before,.ion-ios-keypad:before,.ion-ios-keypad-outline:before,.ion-ios-lightbulb:before,.ion-ios-lightbulb-outline:before,.ion-ios-list:before,.ion-ios-list-outline:before,.ion-ios-location:before,.ion-ios-location-outline:before,.ion-ios-locked:before,.ion-ios-locked-outline:before,.ion-ios-loop:before,.ion-ios-loop-strong:before,.ion-ios-medical:before,.ion-ios-medical-outline:before,.ion-ios-medkit:before,.ion-ios-medkit-outline:before,.ion-ios-mic:before,.ion-ios-mic-off:before,.ion-ios-mic-outline:before,.ion-ios-minus:before,.ion-ios-minus-empty:before,.ion-ios-minus-outline:before,.ion-ios-monitor:before,.ion-ios-monitor-outline:before,.ion-ios-moon:before,.ion-ios-moon-outline:before,.ion-ios-more:before,.ion-ios-more-outline:before,.ion-ios-musical-note:before,.ion-ios-musical-notes:before,.ion-ios-navigate:before,.ion-ios-navigate-outline:before,.ion-ios-nutrition:before,.ion-ios-nutrition-outline:before,.ion-ios-paper:before,.ion-ios-paper-outline:before,.ion-ios-paperplane:before,.ion-ios-paperplane-outline:before,.ion-ios-partlysunny:before,.ion-ios-partlysunny-outline:before,.ion-ios-pause:before,.ion-ios-pause-outline:before,.ion-ios-paw:before,.ion-ios-paw-outline:before,.ion-ios-people:before,.ion-ios-people-outline:before,.ion-ios-person:before,.ion-ios-person-outline:before,.ion-ios-personadd:before,.ion-ios-personadd-outline:before,.ion-ios-photos:before,.ion-ios-photos-outline:before,.ion-ios-pie:before,.ion-ios-pie-outline:before,.ion-ios-pint:before,.ion-ios-pint-outline:before,.ion-ios-play:before,.ion-ios-play-outline:before,.ion-ios-plus:before,.ion-ios-plus-empty:before,.ion-ios-plus-outline:before,.ion-ios-pricetag:before,.ion-ios-pricetag-outline:before,.ion-ios-pricetags:before,.ion-ios-pricetags-outline:before,.ion-ios-printer:before,.ion-ios-printer-outline:before,.ion-ios-pulse:before,.ion-ios-pulse-strong:before,.ion-ios-rainy:before,.ion-ios-rainy-outline:before,.ion-ios-recording:before,.ion-ios-recording-outline:before,.ion-ios-redo:before,.ion-ios-redo-outline:before,.ion-ios-refresh:before,.ion-ios-refresh-empty:before,.ion-ios-refresh-outline:before,.ion-ios-reload:before,.ion-ios-reverse-camera:before,.ion-ios-reverse-camera-outline:before,.ion-ios-rewind:before,.ion-ios-rewind-outline:before,.ion-ios-rose:before,.ion-ios-rose-outline:before,.ion-ios-search:before,.ion-ios-search-strong:before,.ion-ios-settings:before,.ion-ios-settings-strong:before,.ion-ios-shuffle:before,.ion-ios-shuffle-strong:before,.ion-ios-skipbackward:before,.ion-ios-skipbackward-outline:before,.ion-ios-skipforward:before,.ion-ios-skipforward-outline:before,.ion-ios-snowy:before,.ion-ios-speedometer:before,.ion-ios-speedometer-outline:before,.ion-ios-star:before,.ion-ios-star-half:before,.ion-ios-star-outline:before,.ion-ios-stopwatch:before,.ion-ios-stopwatch-outline:before,.ion-ios-sunny:before,.ion-ios-sunny-outline:before,.ion-ios-telephone:before,.ion-ios-telephone-outline:before,.ion-ios-tennisball:before,.ion-ios-tennisball-outline:before,.ion-ios-thunderstorm:before,.ion-ios-thunderstorm-outline:before,.ion-ios-time:before,.ion-ios-time-outline:before,.ion-ios-timer:before,.ion-ios-timer-outline:before,.ion-ios-toggle:before,.ion-ios-toggle-outline:before,.ion-ios-trash:before,.ion-ios-trash-outline:before,.ion-ios-undo:before,.ion-ios-undo-outline:before,.ion-ios-unlocked:before,.ion-ios-unlocked-outline:before,.ion-ios-upload:before,.ion-ios-upload-outline:before,.ion-ios-videocam:before,.ion-ios-videocam-outline:before,.ion-ios-volume-high:before,.ion-ios-volume-low:before,.ion-ios-wineglass:before,.ion-ios-wineglass-outline:before,.ion-ios-world:before,.ion-ios-world-outline:before,.ion-ipad:before,.ion-iphone:before,.ion-ipod:before,.ion-jet:before,.ion-key:before,.ion-knife:before,.ion-laptop:before,.ion-leaf:before,.ion-levels:before,.ion-lightbulb:before,.ion-link:before,.ion-load-a:before,.ion-load-b:before,.ion-load-c:before,.ion-load-d:before,.ion-location:before,.ion-lock-combination:before,.ion-locked:before,.ion-log-in:before,.ion-log-out:before,.ion-loop:before,.ion-magnet:before,.ion-male:before,.ion-man:before,.ion-map:before,.ion-medkit:before,.ion-merge:before,.ion-mic-a:before,.ion-mic-b:before,.ion-mic-c:before,.ion-minus:before,.ion-minus-circled:before,.ion-minus-round:before,.ion-model-s:before,.ion-monitor:before,.ion-more:before,.ion-mouse:before,.ion-music-note:before,.ion-navicon:before,.ion-navicon-round:before,.ion-navigate:before,.ion-network:before,.ion-no-smoking:before,.ion-nuclear:before,.ion-outlet:before,.ion-paintbrush:before,.ion-paintbucket:before,.ion-paper-airplane:before,.ion-paperclip:before,.ion-pause:before,.ion-person:before,.ion-person-add:before,.ion-person-stalker:before,.ion-pie-graph:before,.ion-pin:before,.ion-pinpoint:before,.ion-pizza:before,.ion-plane:before,.ion-planet:before,.ion-play:before,.ion-playstation:before,.ion-plus:before,.ion-plus-circled:before,.ion-plus-round:before,.ion-podium:before,.ion-pound:before,.ion-power:before,.ion-pricetag:before,.ion-pricetags:before,.ion-printer:before,.ion-pull-request:before,.ion-qr-scanner:before,.ion-quote:before,.ion-radio-waves:before,.ion-record:before,.ion-refresh:before,.ion-reply:before,.ion-reply-all:before,.ion-ribbon-a:before,.ion-ribbon-b:before,.ion-sad:before,.ion-sad-outline:before,.ion-scissors:before,.ion-search:before,.ion-settings:before,.ion-share:before,.ion-shuffle:before,.ion-skip-backward:before,.ion-skip-forward:before,.ion-social-android:before,.ion-social-android-outline:before,.ion-social-angular:before,.ion-social-angular-outline:before,.ion-social-apple:before,.ion-social-apple-outline:before,.ion-social-bitcoin:before,.ion-social-bitcoin-outline:before,.ion-social-buffer:before,.ion-social-buffer-outline:before,.ion-social-chrome:before,.ion-social-chrome-outline:before,.ion-social-codepen:before,.ion-social-codepen-outline:before,.ion-social-css3:before,.ion-social-css3-outline:before,.ion-social-designernews:before,.ion-social-designernews-outline:before,.ion-social-dribbble:before,.ion-social-dribbble-outline:before,.ion-social-dropbox:before,.ion-social-dropbox-outline:before,.ion-social-euro:before,.ion-social-euro-outline:before,.ion-social-facebook:before,.ion-social-facebook-outline:before,.ion-social-foursquare:before,.ion-social-foursquare-outline:before,.ion-social-freebsd-devil:before,.ion-social-github:before,.ion-social-github-outline:before,.ion-social-google:before,.ion-social-google-outline:before,.ion-social-googleplus:before,.ion-social-googleplus-outline:before,.ion-social-hackernews:before,.ion-social-hackernews-outline:before,.ion-social-html5:before,.ion-social-html5-outline:before,.ion-social-instagram:before,.ion-social-instagram-outline:before,.ion-social-javascript:before,.ion-social-javascript-outline:before,.ion-social-linkedin:before,.ion-social-linkedin-outline:before,.ion-social-markdown:before,.ion-social-nodejs:before,.ion-social-octocat:before,.ion-social-pinterest:before,.ion-social-pinterest-outline:before,.ion-social-python:before,.ion-social-reddit:before,.ion-social-reddit-outline:before,.ion-social-rss:before,.ion-social-rss-outline:before,.ion-social-sass:before,.ion-social-skype:before,.ion-social-skype-outline:before,.ion-social-snapchat:before,.ion-social-snapchat-outline:before,.ion-social-tumblr:before,.ion-social-tumblr-outline:before,.ion-social-tux:before,.ion-social-twitch:before,.ion-social-twitch-outline:before,.ion-social-twitter:before,.ion-social-twitter-outline:before,.ion-social-usd:before,.ion-social-usd-outline:before,.ion-social-vimeo:before,.ion-social-vimeo-outline:before,.ion-social-whatsapp:before,.ion-social-whatsapp-outline:before,.ion-social-windows:before,.ion-social-windows-outline:before,.ion-social-wordpress:before,.ion-social-wordpress-outline:before,.ion-social-yahoo:before,.ion-social-yahoo-outline:before,.ion-social-yen:before,.ion-social-yen-outline:before,.ion-social-youtube:before,.ion-social-youtube-outline:before,.ion-soup-can:before,.ion-soup-can-outline:before,.ion-speakerphone:before,.ion-speedometer:before,.ion-spoon:before,.ion-star:before,.ion-stats-bars:before,.ion-steam:before,.ion-stop:before,.ion-thermometer:before,.ion-thumbsdown:before,.ion-thumbsup:before,.ion-toggle:before,.ion-toggle-filled:before,.ion-transgender:before,.ion-trash-a:before,.ion-trash-b:before,.ion-trophy:before,.ion-tshirt:before,.ion-tshirt-outline:before,.ion-umbrella:before,.ion-university:before,.ion-unlocked:before,.ion-upload:before,.ion-usb:before,.ion-videocamera:before,.ion-volume-high:before,.ion-volume-low:before,.ion-volume-medium:before,.ion-volume-mute:before,.ion-wand:before,.ion-waterdrop:before,.ion-wifi:before,.ion-wineglass:before,.ion-woman:before,.ion-wrench:before,.ion-xbox:before{display:inline-block;font-family:&quot;Ionicons&quot;;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;text-rendering:auto;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.ion-alert:before{content:&quot;\f101&quot;}.ion-alert-circled:before{content:&quot;\f100&quot;}.ion-android-add:before{content:&quot;\f2c7&quot;}.ion-android-add-circle:before{content:&quot;\f359&quot;}.ion-android-alarm-clock:before{content:&quot;\f35a&quot;}.ion-android-alert:before{content:&quot;\f35b&quot;}.ion-android-apps:before{content:&quot;\f35c&quot;}.ion-android-archive:before{content:&quot;\f2c9&quot;}.ion-android-arrow-back:before{content:&quot;\f2ca&quot;}.ion-android-arrow-down:before{content:&quot;\f35d&quot;}.ion-android-arrow-dropdown:before{content:&quot;\f35f&quot;}.ion-android-arrow-dropdown-circle:before{content:&quot;\f35e&quot;}.ion-android-arrow-dropleft:before{content:&quot;\f361&quot;}.ion-android-arrow-dropleft-circle:before{content:&quot;\f360&quot;}.ion-android-arrow-dropright:before{content:&quot;\f363&quot;}.ion-android-arrow-dropright-circle:before{content:&quot;\f362&quot;}.ion-android-arrow-dropup:before{content:&quot;\f365&quot;}.ion-android-arrow-dropup-circle:before{content:&quot;\f364&quot;}.ion-android-arrow-forward:before{content:&quot;\f30f&quot;}.ion-android-arrow-up:before{content:&quot;\f366&quot;}.ion-android-attach:before{content:&quot;\f367&quot;}.ion-android-bar:before{content:&quot;\f368&quot;}.ion-android-bicycle:before{content:&quot;\f369&quot;}.ion-android-boat:before{content:&quot;\f36a&quot;}.ion-android-bookmark:before{content:&quot;\f36b&quot;}.ion-android-bulb:before{content:&quot;\f36c&quot;}.ion-android-bus:before{content:&quot;\f36d&quot;}.ion-android-calendar:before{content:&quot;\f2d1&quot;}.ion-android-call:before{content:&quot;\f2d2&quot;}.ion-android-camera:before{content:&quot;\f2d3&quot;}.ion-android-cancel:before{content:&quot;\f36e&quot;}.ion-android-car:before{content:&quot;\f36f&quot;}.ion-android-cart:before{content:&quot;\f370&quot;}.ion-android-chat:before{content:&quot;\f2d4&quot;}.ion-android-checkbox:before{content:&quot;\f374&quot;}.ion-android-checkbox-blank:before{content:&quot;\f371&quot;}.ion-android-checkbox-outline:before{content:&quot;\f373&quot;}.ion-android-checkbox-outline-blank:before{content:&quot;\f372&quot;}.ion-android-checkmark-circle:before{content:&quot;\f375&quot;}.ion-android-clipboard:before{content:&quot;\f376&quot;}.ion-android-close:before{content:&quot;\f2d7&quot;}.ion-android-cloud:before{content:&quot;\f37a&quot;}.ion-android-cloud-circle:before{content:&quot;\f377&quot;}.ion-android-cloud-done:before{content:&quot;\f378&quot;}.ion-android-cloud-outline:before{content:&quot;\f379&quot;}.ion-android-color-palette:before{content:&quot;\f37b&quot;}.ion-android-compass:before{content:&quot;\f37c&quot;}.ion-android-contact:before{content:&quot;\f2d8&quot;}.ion-android-contacts:before{content:&quot;\f2d9&quot;}.ion-android-contract:before{content:&quot;\f37d&quot;}.ion-android-create:before{content:&quot;\f37e&quot;}.ion-android-delete:before{content:&quot;\f37f&quot;}.ion-android-desktop:before{content:&quot;\f380&quot;}.ion-android-document:before{content:&quot;\f381&quot;}.ion-android-done:before{content:&quot;\f383&quot;}.ion-android-done-all:before{content:&quot;\f382&quot;}.ion-android-download:before{content:&quot;\f2dd&quot;}.ion-android-drafts:before{content:&quot;\f384&quot;}.ion-android-exit:before{content:&quot;\f385&quot;}.ion-android-expand:before{content:&quot;\f386&quot;}.ion-android-favorite:before{content:&quot;\f388&quot;}.ion-android-favorite-outline:before{content:&quot;\f387&quot;}.ion-android-film:before{content:&quot;\f389&quot;}.ion-android-folder:before{content:&quot;\f2e0&quot;}.ion-android-folder-open:before{content:&quot;\f38a&quot;}.ion-android-funnel:before{content:&quot;\f38b&quot;}.ion-android-globe:before{content:&quot;\f38c&quot;}.ion-android-hand:before{content:&quot;\f2e3&quot;}.ion-android-hangout:before{content:&quot;\f38d&quot;}.ion-android-happy:before{content:&quot;\f38e&quot;}.ion-android-home:before{content:&quot;\f38f&quot;}.ion-android-image:before{content:&quot;\f2e4&quot;}.ion-android-laptop:before{content:&quot;\f390&quot;}.ion-android-list:before{content:&quot;\f391&quot;}.ion-android-locate:before{content:&quot;\f2e9&quot;}.ion-android-lock:before{content:&quot;\f392&quot;}.ion-android-mail:before{content:&quot;\f2eb&quot;}.ion-android-map:before{content:&quot;\f393&quot;}.ion-android-menu:before{content:&quot;\f394&quot;}.ion-android-microphone:before{content:&quot;\f2ec&quot;}.ion-android-microphone-off:before{content:&quot;\f395&quot;}.ion-android-more-horizontal:before{content:&quot;\f396&quot;}.ion-android-more-vertical:before{content:&quot;\f397&quot;}.ion-android-navigate:before{content:&quot;\f398&quot;}.ion-android-notifications:before{content:&quot;\f39b&quot;}.ion-android-notifications-none:before{content:&quot;\f399&quot;}.ion-android-notifications-off:before{content:&quot;\f39a&quot;}.ion-android-open:before{content:&quot;\f39c&quot;}.ion-android-options:before{content:&quot;\f39d&quot;}.ion-android-people:before{content:&quot;\f39e&quot;}.ion-android-person:before{content:&quot;\f3a0&quot;}.ion-android-person-add:before{content:&quot;\f39f&quot;}.ion-android-phone-landscape:before{content:&quot;\f3a1&quot;}.ion-android-phone-portrait:before{content:&quot;\f3a2&quot;}.ion-android-pin:before{content:&quot;\f3a3&quot;}.ion-android-plane:before{content:&quot;\f3a4&quot;}.ion-android-playstore:before{content:&quot;\f2f0&quot;}.ion-android-print:before{content:&quot;\f3a5&quot;}.ion-android-radio-button-off:before{content:&quot;\f3a6&quot;}.ion-android-radio-button-on:before{content:&quot;\f3a7&quot;}.ion-android-refresh:before{content:&quot;\f3a8&quot;}.ion-android-remove:before{content:&quot;\f2f4&quot;}.ion-android-remove-circle:before{content:&quot;\f3a9&quot;}.ion-android-restaurant:before{content:&quot;\f3aa&quot;}.ion-android-sad:before{content:&quot;\f3ab&quot;}.ion-android-search:before{content:&quot;\f2f5&quot;}.ion-android-send:before{content:&quot;\f2f6&quot;}.ion-android-settings:before{content:&quot;\f2f7&quot;}.ion-android-share:before{content:&quot;\f2f8&quot;}.ion-android-share-alt:before{content:&quot;\f3ac&quot;}.ion-android-star:before{content:&quot;\f2fc&quot;}.ion-android-star-half:before{content:&quot;\f3ad&quot;}.ion-android-star-outline:before{content:&quot;\f3ae&quot;}.ion-android-stopwatch:before{content:&quot;\f2fd&quot;}.ion-android-subway:before{content:&quot;\f3af&quot;}.ion-android-sunny:before{content:&quot;\f3b0&quot;}.ion-android-sync:before{content:&quot;\f3b1&quot;}.ion-android-textsms:before{content:&quot;\f3b2&quot;}.ion-android-time:before{content:&quot;\f3b3&quot;}.ion-android-train:before{content:&quot;\f3b4&quot;}.ion-android-unlock:before{content:&quot;\f3b5&quot;}.ion-android-upload:before{content:&quot;\f3b6&quot;}.ion-android-volume-down:before{content:&quot;\f3b7&quot;}.ion-android-volume-mute:before{content:&quot;\f3b8&quot;}.ion-android-volume-off:before{content:&quot;\f3b9&quot;}.ion-android-volume-up:before{content:&quot;\f3ba&quot;}.ion-android-walk:before{content:&quot;\f3bb&quot;}.ion-android-warning:before{content:&quot;\f3bc&quot;}.ion-android-watch:before{content:&quot;\f3bd&quot;}.ion-android-wifi:before{content:&quot;\f305&quot;}.ion-aperture:before{content:&quot;\f313&quot;}.ion-archive:before{content:&quot;\f102&quot;}.ion-arrow-down-a:before{content:&quot;\f103&quot;}.ion-arrow-down-b:before{content:&quot;\f104&quot;}.ion-arrow-down-c:before{content:&quot;\f105&quot;}.ion-arrow-expand:before{content:&quot;\f25e&quot;}.ion-arrow-graph-down-left:before{content:&quot;\f25f&quot;}.ion-arrow-graph-down-right:before{content:&quot;\f260&quot;}.ion-arrow-graph-up-left:before{content:&quot;\f261&quot;}.ion-arrow-graph-up-right:before{content:&quot;\f262&quot;}.ion-arrow-left-a:before{content:&quot;\f106&quot;}.ion-arrow-left-b:before{content:&quot;\f107&quot;}.ion-arrow-left-c:before{content:&quot;\f108&quot;}.ion-arrow-move:before{content:&quot;\f263&quot;}.ion-arrow-resize:before{content:&quot;\f264&quot;}.ion-arrow-return-left:before{content:&quot;\f265&quot;}.ion-arrow-return-right:before{content:&quot;\f266&quot;}.ion-arrow-right-a:before{content:&quot;\f109&quot;}.ion-arrow-right-b:before{content:&quot;\f10a&quot;}.ion-arrow-right-c:before{content:&quot;\f10b&quot;}.ion-arrow-shrink:before{content:&quot;\f267&quot;}.ion-arrow-swap:before{content:&quot;\f268&quot;}.ion-arrow-up-a:before{content:&quot;\f10c&quot;}.ion-arrow-up-b:before{content:&quot;\f10d&quot;}.ion-arrow-up-c:before{content:&quot;\f10e&quot;}.ion-asterisk:before{content:&quot;\f314&quot;}.ion-at:before{content:&quot;\f10f&quot;}.ion-backspace:before{content:&quot;\f3bf&quot;}.ion-backspace-outline:before{content:&quot;\f3be&quot;}.ion-bag:before{content:&quot;\f110&quot;}.ion-battery-charging:before{content:&quot;\f111&quot;}.ion-battery-empty:before{content:&quot;\f112&quot;}.ion-battery-full:before{content:&quot;\f113&quot;}.ion-battery-half:before{content:&quot;\f114&quot;}.ion-battery-low:before{content:&quot;\f115&quot;}.ion-beaker:before{content:&quot;\f269&quot;}.ion-beer:before{content:&quot;\f26a&quot;}.ion-bluetooth:before{content:&quot;\f116&quot;}.ion-bonfire:before{content:&quot;\f315&quot;}.ion-bookmark:before{content:&quot;\f26b&quot;}.ion-bowtie:before{content:&quot;\f3c0&quot;}.ion-briefcase:before{content:&quot;\f26c&quot;}.ion-bug:before{content:&quot;\f2be&quot;}.ion-calculator:before{content:&quot;\f26d&quot;}.ion-calendar:before{content:&quot;\f117&quot;}.ion-camera:before{content:&quot;\f118&quot;}.ion-card:before{content:&quot;\f119&quot;}.ion-cash:before{content:&quot;\f316&quot;}.ion-chatbox:before{content:&quot;\f11b&quot;}.ion-chatbox-working:before{content:&quot;\f11a&quot;}.ion-chatboxes:before{content:&quot;\f11c&quot;}.ion-chatbubble:before{content:&quot;\f11e&quot;}.ion-chatbubble-working:before{content:&quot;\f11d&quot;}.ion-chatbubbles:before{content:&quot;\f11f&quot;}.ion-checkmark:before{content:&quot;\f122&quot;}.ion-checkmark-circled:before{content:&quot;\f120&quot;}.ion-checkmark-round:before{content:&quot;\f121&quot;}.ion-chevron-down:before{content:&quot;\f123&quot;}.ion-chevron-left:before{content:&quot;\f124&quot;}.ion-chevron-right:before{content:&quot;\f125&quot;}.ion-chevron-up:before{content:&quot;\f126&quot;}.ion-clipboard:before{content:&quot;\f127&quot;}.ion-clock:before{content:&quot;\f26e&quot;}.ion-close:before{content:&quot;\f12a&quot;}.ion-close-circled:before{content:&quot;\f128&quot;}.ion-close-round:before{content:&quot;\f129&quot;}.ion-closed-captioning:before{content:&quot;\f317&quot;}.ion-cloud:before{content:&quot;\f12b&quot;}.ion-code:before{content:&quot;\f271&quot;}.ion-code-download:before{content:&quot;\f26f&quot;}.ion-code-working:before{content:&quot;\f270&quot;}.ion-coffee:before{content:&quot;\f272&quot;}.ion-compass:before{content:&quot;\f273&quot;}.ion-compose:before{content:&quot;\f12c&quot;}.ion-connection-bars:before{content:&quot;\f274&quot;}.ion-contrast:before{content:&quot;\f275&quot;}.ion-crop:before{content:&quot;\f3c1&quot;}.ion-cube:before{content:&quot;\f318&quot;}.ion-disc:before{content:&quot;\f12d&quot;}.ion-document:before{content:&quot;\f12f&quot;}.ion-document-text:before{content:&quot;\f12e&quot;}.ion-drag:before{content:&quot;\f130&quot;}.ion-earth:before{content:&quot;\f276&quot;}.ion-easel:before{content:&quot;\f3c2&quot;}.ion-edit:before{content:&quot;\f2bf&quot;}.ion-egg:before{content:&quot;\f277&quot;}.ion-eject:before{content:&quot;\f131&quot;}.ion-email:before{content:&quot;\f132&quot;}.ion-email-unread:before{content:&quot;\f3c3&quot;}.ion-erlenmeyer-flask:before{content:&quot;\f3c5&quot;}.ion-erlenmeyer-flask-bubbles:before{content:&quot;\f3c4&quot;}.ion-eye:before{content:&quot;\f133&quot;}.ion-eye-disabled:before{content:&quot;\f306&quot;}.ion-female:before{content:&quot;\f278&quot;}.ion-filing:before{content:&quot;\f134&quot;}.ion-film-marker:before{content:&quot;\f135&quot;}.ion-fireball:before{content:&quot;\f319&quot;}.ion-flag:before{content:&quot;\f279&quot;}.ion-flame:before{content:&quot;\f31a&quot;}.ion-flash:before{content:&quot;\f137&quot;}.ion-flash-off:before{content:&quot;\f136&quot;}.ion-folder:before{content:&quot;\f139&quot;}.ion-fork:before{content:&quot;\f27a&quot;}.ion-fork-repo:before{content:&quot;\f2c0&quot;}.ion-forward:before{content:&quot;\f13a&quot;}.ion-funnel:before{content:&quot;\f31b&quot;}.ion-gear-a:before{content:&quot;\f13d&quot;}.ion-gear-b:before{content:&quot;\f13e&quot;}.ion-grid:before{content:&quot;\f13f&quot;}.ion-hammer:before{content:&quot;\f27b&quot;}.ion-happy:before{content:&quot;\f31c&quot;}.ion-happy-outline:before{content:&quot;\f3c6&quot;}.ion-headphone:before{content:&quot;\f140&quot;}.ion-heart:before{content:&quot;\f141&quot;}.ion-heart-broken:before{content:&quot;\f31d&quot;}.ion-help:before{content:&quot;\f143&quot;}.ion-help-buoy:before{content:&quot;\f27c&quot;}.ion-help-circled:before{content:&quot;\f142&quot;}.ion-home:before{content:&quot;\f144&quot;}.ion-icecream:before{content:&quot;\f27d&quot;}.ion-image:before{content:&quot;\f147&quot;}.ion-images:before{content:&quot;\f148&quot;}.ion-information:before{content:&quot;\f14a&quot;}.ion-information-circled:before{content:&quot;\f149&quot;}.ion-ionic:before{content:&quot;\f14b&quot;}.ion-ios-alarm:before{content:&quot;\f3c8&quot;}.ion-ios-alarm-outline:before{content:&quot;\f3c7&quot;}.ion-ios-albums:before{content:&quot;\f3ca&quot;}.ion-ios-albums-outline:before{content:&quot;\f3c9&quot;}.ion-ios-americanfootball:before{content:&quot;\f3cc&quot;}.ion-ios-americanfootball-outline:before{content:&quot;\f3cb&quot;}.ion-ios-analytics:before{content:&quot;\f3ce&quot;}.ion-ios-analytics-outline:before{content:&quot;\f3cd&quot;}.ion-ios-arrow-back:before{content:&quot;\f3cf&quot;}.ion-ios-arrow-down:before{content:&quot;\f3d0&quot;}.ion-ios-arrow-forward:before{content:&quot;\f3d1&quot;}.ion-ios-arrow-left:before{content:&quot;\f3d2&quot;}.ion-ios-arrow-right:before{content:&quot;\f3d3&quot;}.ion-ios-arrow-thin-down:before{content:&quot;\f3d4&quot;}.ion-ios-arrow-thin-left:before{content:&quot;\f3d5&quot;}.ion-ios-arrow-thin-right:before{content:&quot;\f3d6&quot;}.ion-ios-arrow-thin-up:before{content:&quot;\f3d7&quot;}.ion-ios-arrow-up:before{content:&quot;\f3d8&quot;}.ion-ios-at:before{content:&quot;\f3da&quot;}.ion-ios-at-outline:before{content:&quot;\f3d9&quot;}.ion-ios-barcode:before{content:&quot;\f3dc&quot;}.ion-ios-barcode-outline:before{content:&quot;\f3db&quot;}.ion-ios-baseball:before{content:&quot;\f3de&quot;}.ion-ios-baseball-outline:before{content:&quot;\f3dd&quot;}.ion-ios-basketball:before{content:&quot;\f3e0&quot;}.ion-ios-basketball-outline:before{content:&quot;\f3df&quot;}.ion-ios-bell:before{content:&quot;\f3e2&quot;}.ion-ios-bell-outline:before{content:&quot;\f3e1&quot;}.ion-ios-body:before{content:&quot;\f3e4&quot;}.ion-ios-body-outline:before{content:&quot;\f3e3&quot;}.ion-ios-bolt:before{content:&quot;\f3e6&quot;}.ion-ios-bolt-outline:before{content:&quot;\f3e5&quot;}.ion-ios-book:before{content:&quot;\f3e8&quot;}.ion-ios-book-outline:before{content:&quot;\f3e7&quot;}.ion-ios-bookmarks:before{content:&quot;\f3ea&quot;}.ion-ios-bookmarks-outline:before{content:&quot;\f3e9&quot;}.ion-ios-box:before{content:&quot;\f3ec&quot;}.ion-ios-box-outline:before{content:&quot;\f3eb&quot;}.ion-ios-briefcase:before{content:&quot;\f3ee&quot;}.ion-ios-briefcase-outline:before{content:&quot;\f3ed&quot;}.ion-ios-browsers:before{content:&quot;\f3f0&quot;}.ion-ios-browsers-outline:before{content:&quot;\f3ef&quot;}.ion-ios-calculator:before{content:&quot;\f3f2&quot;}.ion-ios-calculator-outline:before{content:&quot;\f3f1&quot;}.ion-ios-calendar:before{content:&quot;\f3f4&quot;}.ion-ios-calendar-outline:before{content:&quot;\f3f3&quot;}.ion-ios-camera:before{content:&quot;\f3f6&quot;}.ion-ios-camera-outline:before{content:&quot;\f3f5&quot;}.ion-ios-cart:before{content:&quot;\f3f8&quot;}.ion-ios-cart-outline:before{content:&quot;\f3f7&quot;}.ion-ios-chatboxes:before{content:&quot;\f3fa&quot;}.ion-ios-chatboxes-outline:before{content:&quot;\f3f9&quot;}.ion-ios-chatbubble:before{content:&quot;\f3fc&quot;}.ion-ios-chatbubble-outline:before{content:&quot;\f3fb&quot;}.ion-ios-checkmark:before{content:&quot;\f3ff&quot;}.ion-ios-checkmark-empty:before{content:&quot;\f3fd&quot;}.ion-ios-checkmark-outline:before{content:&quot;\f3fe&quot;}.ion-ios-circle-filled:before{content:&quot;\f400&quot;}.ion-ios-circle-outline:before{content:&quot;\f401&quot;}.ion-ios-clock:before{content:&quot;\f403&quot;}.ion-ios-clock-outline:before{content:&quot;\f402&quot;}.ion-ios-close:before{content:&quot;\f406&quot;}.ion-ios-close-empty:before{content:&quot;\f404&quot;}.ion-ios-close-outline:before{content:&quot;\f405&quot;}.ion-ios-cloud:before{content:&quot;\f40c&quot;}.ion-ios-cloud-download:before{content:&quot;\f408&quot;}.ion-ios-cloud-download-outline:before{content:&quot;\f407&quot;}.ion-ios-cloud-outline:before{content:&quot;\f409&quot;}.ion-ios-cloud-upload:before{content:&quot;\f40b&quot;}.ion-ios-cloud-upload-outline:before{content:&quot;\f40a&quot;}.ion-ios-cloudy:before{content:&quot;\f410&quot;}.ion-ios-cloudy-night:before{content:&quot;\f40e&quot;}.ion-ios-cloudy-night-outline:before{content:&quot;\f40d&quot;}.ion-ios-cloudy-outline:before{content:&quot;\f40f&quot;}.ion-ios-cog:before{content:&quot;\f412&quot;}.ion-ios-cog-outline:before{content:&quot;\f411&quot;}.ion-ios-color-filter:before{content:&quot;\f414&quot;}.ion-ios-color-filter-outline:before{content:&quot;\f413&quot;}.ion-ios-color-wand:before{content:&quot;\f416&quot;}.ion-ios-color-wand-outline:before{content:&quot;\f415&quot;}.ion-ios-compose:before{content:&quot;\f418&quot;}.ion-ios-compose-outline:before{content:&quot;\f417&quot;}.ion-ios-contact:before{content:&quot;\f41a&quot;}.ion-ios-contact-outline:before{content:&quot;\f419&quot;}.ion-ios-copy:before{content:&quot;\f41c&quot;}.ion-ios-copy-outline:before{content:&quot;\f41b&quot;}.ion-ios-crop:before{content:&quot;\f41e&quot;}.ion-ios-crop-strong:before{content:&quot;\f41d&quot;}.ion-ios-download:before{content:&quot;\f420&quot;}.ion-ios-download-outline:before{content:&quot;\f41f&quot;}.ion-ios-drag:before{content:&quot;\f421&quot;}.ion-ios-email:before{content:&quot;\f423&quot;}.ion-ios-email-outline:before{content:&quot;\f422&quot;}.ion-ios-eye:before{content:&quot;\f425&quot;}.ion-ios-eye-outline:before{content:&quot;\f424&quot;}.ion-ios-fastforward:before{content:&quot;\f427&quot;}.ion-ios-fastforward-outline:before{content:&quot;\f426&quot;}.ion-ios-filing:before{content:&quot;\f429&quot;}.ion-ios-filing-outline:before{content:&quot;\f428&quot;}.ion-ios-film:before{content:&quot;\f42b&quot;}.ion-ios-film-outline:before{content:&quot;\f42a&quot;}.ion-ios-flag:before{content:&quot;\f42d&quot;}.ion-ios-flag-outline:before{content:&quot;\f42c&quot;}.ion-ios-flame:before{content:&quot;\f42f&quot;}.ion-ios-flame-outline:before{content:&quot;\f42e&quot;}.ion-ios-flask:before{content:&quot;\f431&quot;}.ion-ios-flask-outline:before{content:&quot;\f430&quot;}.ion-ios-flower:before{content:&quot;\f433&quot;}.ion-ios-flower-outline:before{content:&quot;\f432&quot;}.ion-ios-folder:before{content:&quot;\f435&quot;}.ion-ios-folder-outline:before{content:&quot;\f434&quot;}.ion-ios-football:before{content:&quot;\f437&quot;}.ion-ios-football-outline:before{content:&quot;\f436&quot;}.ion-ios-game-controller-a:before{content:&quot;\f439&quot;}.ion-ios-game-controller-a-outline:before{content:&quot;\f438&quot;}.ion-ios-game-controller-b:before{content:&quot;\f43b&quot;}.ion-ios-game-controller-b-outline:before{content:&quot;\f43a&quot;}.ion-ios-gear:before{content:&quot;\f43d&quot;}.ion-ios-gear-outline:before{content:&quot;\f43c&quot;}.ion-ios-glasses:before{content:&quot;\f43f&quot;}.ion-ios-glasses-outline:before{content:&quot;\f43e&quot;}.ion-ios-grid-view:before{content:&quot;\f441&quot;}.ion-ios-grid-view-outline:before{content:&quot;\f440&quot;}.ion-ios-heart:before{content:&quot;\f443&quot;}.ion-ios-heart-outline:before{content:&quot;\f442&quot;}.ion-ios-help:before{content:&quot;\f446&quot;}.ion-ios-help-empty:before{content:&quot;\f444&quot;}.ion-ios-help-outline:before{content:&quot;\f445&quot;}.ion-ios-home:before{content:&quot;\f448&quot;}.ion-ios-home-outline:before{content:&quot;\f447&quot;}.ion-ios-infinite:before{content:&quot;\f44a&quot;}.ion-ios-infinite-outline:before{content:&quot;\f449&quot;}.ion-ios-information:before{content:&quot;\f44d&quot;}.ion-ios-information-empty:before{content:&quot;\f44b&quot;}.ion-ios-information-outline:before{content:&quot;\f44c&quot;}.ion-ios-ionic-outline:before{content:&quot;\f44e&quot;}.ion-ios-keypad:before{content:&quot;\f450&quot;}.ion-ios-keypad-outline:before{content:&quot;\f44f&quot;}.ion-ios-lightbulb:before{content:&quot;\f452&quot;}.ion-ios-lightbulb-outline:before{content:&quot;\f451&quot;}.ion-ios-list:before{content:&quot;\f454&quot;}.ion-ios-list-outline:before{content:&quot;\f453&quot;}.ion-ios-location:before{content:&quot;\f456&quot;}.ion-ios-location-outline:before{content:&quot;\f455&quot;}.ion-ios-locked:before{content:&quot;\f458&quot;}.ion-ios-locked-outline:before{content:&quot;\f457&quot;}.ion-ios-loop:before{content:&quot;\f45a&quot;}.ion-ios-loop-strong:before{content:&quot;\f459&quot;}.ion-ios-medical:before{content:&quot;\f45c&quot;}.ion-ios-medical-outline:before{content:&quot;\f45b&quot;}.ion-ios-medkit:before{content:&quot;\f45e&quot;}.ion-ios-medkit-outline:before{content:&quot;\f45d&quot;}.ion-ios-mic:before{content:&quot;\f461&quot;}.ion-ios-mic-off:before{content:&quot;\f45f&quot;}.ion-ios-mic-outline:before{content:&quot;\f460&quot;}.ion-ios-minus:before{content:&quot;\f464&quot;}.ion-ios-minus-empty:before{content:&quot;\f462&quot;}.ion-ios-minus-outline:before{content:&quot;\f463&quot;}.ion-ios-monitor:before{content:&quot;\f466&quot;}.ion-ios-monitor-outline:before{content:&quot;\f465&quot;}.ion-ios-moon:before{content:&quot;\f468&quot;}.ion-ios-moon-outline:before{content:&quot;\f467&quot;}.ion-ios-more:before{content:&quot;\f46a&quot;}.ion-ios-more-outline:before{content:&quot;\f469&quot;}.ion-ios-musical-note:before{content:&quot;\f46b&quot;}.ion-ios-musical-notes:before{content:&quot;\f46c&quot;}.ion-ios-navigate:before{content:&quot;\f46e&quot;}.ion-ios-navigate-outline:before{content:&quot;\f46d&quot;}.ion-ios-nutrition:before{content:&quot;\f470&quot;}.ion-ios-nutrition-outline:before{content:&quot;\f46f&quot;}.ion-ios-paper:before{content:&quot;\f472&quot;}.ion-ios-paper-outline:before{content:&quot;\f471&quot;}.ion-ios-paperplane:before{content:&quot;\f474&quot;}.ion-ios-paperplane-outline:before{content:&quot;\f473&quot;}.ion-ios-partlysunny:before{content:&quot;\f476&quot;}.ion-ios-partlysunny-outline:before{content:&quot;\f475&quot;}.ion-ios-pause:before{content:&quot;\f478&quot;}.ion-ios-pause-outline:before{content:&quot;\f477&quot;}.ion-ios-paw:before{content:&quot;\f47a&quot;}.ion-ios-paw-outline:before{content:&quot;\f479&quot;}.ion-ios-people:before{content:&quot;\f47c&quot;}.ion-ios-people-outline:before{content:&quot;\f47b&quot;}.ion-ios-person:before{content:&quot;\f47e&quot;}.ion-ios-person-outline:before{content:&quot;\f47d&quot;}.ion-ios-personadd:before{content:&quot;\f480&quot;}.ion-ios-personadd-outline:before{content:&quot;\f47f&quot;}.ion-ios-photos:before{content:&quot;\f482&quot;}.ion-ios-photos-outline:before{content:&quot;\f481&quot;}.ion-ios-pie:before{content:&quot;\f484&quot;}.ion-ios-pie-outline:before{content:&quot;\f483&quot;}.ion-ios-pint:before{content:&quot;\f486&quot;}.ion-ios-pint-outline:before{content:&quot;\f485&quot;}.ion-ios-play:before{content:&quot;\f488&quot;}.ion-ios-play-outline:before{content:&quot;\f487&quot;}.ion-ios-plus:before{content:&quot;\f48b&quot;}.ion-ios-plus-empty:before{content:&quot;\f489&quot;}.ion-ios-plus-outline:before{content:&quot;\f48a&quot;}.ion-ios-pricetag:before{content:&quot;\f48d&quot;}.ion-ios-pricetag-outline:before{content:&quot;\f48c&quot;}.ion-ios-pricetags:before{content:&quot;\f48f&quot;}.ion-ios-pricetags-outline:before{content:&quot;\f48e&quot;}.ion-ios-printer:before{content:&quot;\f491&quot;}.ion-ios-printer-outline:before{content:&quot;\f490&quot;}.ion-ios-pulse:before{content:&quot;\f493&quot;}.ion-ios-pulse-strong:before{content:&quot;\f492&quot;}.ion-ios-rainy:before{content:&quot;\f495&quot;}.ion-ios-rainy-outline:before{content:&quot;\f494&quot;}.ion-ios-recording:before{content:&quot;\f497&quot;}.ion-ios-recording-outline:before{content:&quot;\f496&quot;}.ion-ios-redo:before{content:&quot;\f499&quot;}.ion-ios-redo-outline:before{content:&quot;\f498&quot;}.ion-ios-refresh:before{content:&quot;\f49c&quot;}.ion-ios-refresh-empty:before{content:&quot;\f49a&quot;}.ion-ios-refresh-outline:before{content:&quot;\f49b&quot;}.ion-ios-reload:before{content:&quot;\f49d&quot;}.ion-ios-reverse-camera:before{content:&quot;\f49f&quot;}.ion-ios-reverse-camera-outline:before{content:&quot;\f49e&quot;}.ion-ios-rewind:before{content:&quot;\f4a1&quot;}.ion-ios-rewind-outline:before{content:&quot;\f4a0&quot;}.ion-ios-rose:before{content:&quot;\f4a3&quot;}.ion-ios-rose-outline:before{content:&quot;\f4a2&quot;}.ion-ios-search:before{content:&quot;\f4a5&quot;}.ion-ios-search-strong:before{content:&quot;\f4a4&quot;}.ion-ios-settings:before{content:&quot;\f4a7&quot;}.ion-ios-settings-strong:before{content:&quot;\f4a6&quot;}.ion-ios-shuffle:before{content:&quot;\f4a9&quot;}.ion-ios-shuffle-strong:before{content:&quot;\f4a8&quot;}.ion-ios-skipbackward:before{content:&quot;\f4ab&quot;}.ion-ios-skipbackward-outline:before{content:&quot;\f4aa&quot;}.ion-ios-skipforward:before{content:&quot;\f4ad&quot;}.ion-ios-skipforward-outline:before{content:&quot;\f4ac&quot;}.ion-ios-snowy:before{content:&quot;\f4ae&quot;}.ion-ios-speedometer:before{content:&quot;\f4b0&quot;}.ion-ios-speedometer-outline:before{content:&quot;\f4af&quot;}.ion-ios-star:before{content:&quot;\f4b3&quot;}.ion-ios-star-half:before{content:&quot;\f4b1&quot;}.ion-ios-star-outline:before{content:&quot;\f4b2&quot;}.ion-ios-stopwatch:before{content:&quot;\f4b5&quot;}.ion-ios-stopwatch-outline:before{content:&quot;\f4b4&quot;}.ion-ios-sunny:before{content:&quot;\f4b7&quot;}.ion-ios-sunny-outline:before{content:&quot;\f4b6&quot;}.ion-ios-telephone:before{content:&quot;\f4b9&quot;}.ion-ios-telephone-outline:before{content:&quot;\f4b8&quot;}.ion-ios-tennisball:before{content:&quot;\f4bb&quot;}.ion-ios-tennisball-outline:before{content:&quot;\f4ba&quot;}.ion-ios-thunderstorm:before{content:&quot;\f4bd&quot;}.ion-ios-thunderstorm-outline:before{content:&quot;\f4bc&quot;}.ion-ios-time:before{content:&quot;\f4bf&quot;}.ion-ios-time-outline:before{content:&quot;\f4be&quot;}.ion-ios-timer:before{content:&quot;\f4c1&quot;}.ion-ios-timer-outline:before{content:&quot;\f4c0&quot;}.ion-ios-toggle:before{content:&quot;\f4c3&quot;}.ion-ios-toggle-outline:before{content:&quot;\f4c2&quot;}.ion-ios-trash:before{content:&quot;\f4c5&quot;}.ion-ios-trash-outline:before{content:&quot;\f4c4&quot;}.ion-ios-undo:before{content:&quot;\f4c7&quot;}.ion-ios-undo-outline:before{content:&quot;\f4c6&quot;}.ion-ios-unlocked:before{content:&quot;\f4c9&quot;}.ion-ios-unlocked-outline:before{content:&quot;\f4c8&quot;}.ion-ios-upload:before{content:&quot;\f4cb&quot;}.ion-ios-upload-outline:before{content:&quot;\f4ca&quot;}.ion-ios-videocam:before{content:&quot;\f4cd&quot;}.ion-ios-videocam-outline:before{content:&quot;\f4cc&quot;}.ion-ios-volume-high:before{content:&quot;\f4ce&quot;}.ion-ios-volume-low:before{content:&quot;\f4cf&quot;}.ion-ios-wineglass:before{content:&quot;\f4d1&quot;}.ion-ios-wineglass-outline:before{content:&quot;\f4d0&quot;}.ion-ios-world:before{content:&quot;\f4d3&quot;}.ion-ios-world-outline:before{content:&quot;\f4d2&quot;}.ion-ipad:before{content:&quot;\f1f9&quot;}.ion-iphone:before{content:&quot;\f1fa&quot;}.ion-ipod:before{content:&quot;\f1fb&quot;}.ion-jet:before{content:&quot;\f295&quot;}.ion-key:before{content:&quot;\f296&quot;}.ion-knife:before{content:&quot;\f297&quot;}.ion-laptop:before{content:&quot;\f1fc&quot;}.ion-leaf:before{content:&quot;\f1fd&quot;}.ion-levels:before{content:&quot;\f298&quot;}.ion-lightbulb:before{content:&quot;\f299&quot;}.ion-link:before{content:&quot;\f1fe&quot;}.ion-load-a:before{content:&quot;\f29a&quot;}.ion-load-b:before{content:&quot;\f29b&quot;}.ion-load-c:before{content:&quot;\f29c&quot;}.ion-load-d:before{content:&quot;\f29d&quot;}.ion-location:before{content:&quot;\f1ff&quot;}.ion-lock-combination:before{content:&quot;\f4d4&quot;}.ion-locked:before{content:&quot;\f200&quot;}.ion-log-in:before{content:&quot;\f29e&quot;}.ion-log-out:before{content:&quot;\f29f&quot;}.ion-loop:before{content:&quot;\f201&quot;}.ion-magnet:before{content:&quot;\f2a0&quot;}.ion-male:before{content:&quot;\f2a1&quot;}.ion-man:before{content:&quot;\f202&quot;}.ion-map:before{content:&quot;\f203&quot;}.ion-medkit:before{content:&quot;\f2a2&quot;}.ion-merge:before{content:&quot;\f33f&quot;}.ion-mic-a:before{content:&quot;\f204&quot;}.ion-mic-b:before{content:&quot;\f205&quot;}.ion-mic-c:before{content:&quot;\f206&quot;}.ion-minus:before{content:&quot;\f209&quot;}.ion-minus-circled:before{content:&quot;\f207&quot;}.ion-minus-round:before{content:&quot;\f208&quot;}.ion-model-s:before{content:&quot;\f2c1&quot;}.ion-monitor:before{content:&quot;\f20a&quot;}.ion-more:before{content:&quot;\f20b&quot;}.ion-mouse:before{content:&quot;\f340&quot;}.ion-music-note:before{content:&quot;\f20c&quot;}.ion-navicon:before{content:&quot;\f20e&quot;}.ion-navicon-round:before{content:&quot;\f20d&quot;}.ion-navigate:before{content:&quot;\f2a3&quot;}.ion-network:before{content:&quot;\f341&quot;}.ion-no-smoking:before{content:&quot;\f2c2&quot;}.ion-nuclear:before{content:&quot;\f2a4&quot;}.ion-outlet:before{content:&quot;\f342&quot;}.ion-paintbrush:before{content:&quot;\f4d5&quot;}.ion-paintbucket:before{content:&quot;\f4d6&quot;}.ion-paper-airplane:before{content:&quot;\f2c3&quot;}.ion-paperclip:before{content:&quot;\f20f&quot;}.ion-pause:before{content:&quot;\f210&quot;}.ion-person:before{content:&quot;\f213&quot;}.ion-person-add:before{content:&quot;\f211&quot;}.ion-person-stalker:before{content:&quot;\f212&quot;}.ion-pie-graph:before{content:&quot;\f2a5&quot;}.ion-pin:before{content:&quot;\f2a6&quot;}.ion-pinpoint:before{content:&quot;\f2a7&quot;}.ion-pizza:before{content:&quot;\f2a8&quot;}.ion-plane:before{content:&quot;\f214&quot;}.ion-planet:before{content:&quot;\f343&quot;}.ion-play:before{content:&quot;\f215&quot;}.ion-playstation:before{content:&quot;\f30a&quot;}.ion-plus:before{content:&quot;\f218&quot;}.ion-plus-circled:before{content:&quot;\f216&quot;}.ion-plus-round:before{content:&quot;\f217&quot;}.ion-podium:before{content:&quot;\f344&quot;}.ion-pound:before{content:&quot;\f219&quot;}.ion-power:before{content:&quot;\f2a9&quot;}.ion-pricetag:before{content:&quot;\f2aa&quot;}.ion-pricetags:before{content:&quot;\f2ab&quot;}.ion-printer:before{content:&quot;\f21a&quot;}.ion-pull-request:before{content:&quot;\f345&quot;}.ion-qr-scanner:before{content:&quot;\f346&quot;}.ion-quote:before{content:&quot;\f347&quot;}.ion-radio-waves:before{content:&quot;\f2ac&quot;}.ion-record:before{content:&quot;\f21b&quot;}.ion-refresh:before{content:&quot;\f21c&quot;}.ion-reply:before{content:&quot;\f21e&quot;}.ion-reply-all:before{content:&quot;\f21d&quot;}.ion-ribbon-a:before{content:&quot;\f348&quot;}.ion-ribbon-b:before{content:&quot;\f349&quot;}.ion-sad:before{content:&quot;\f34a&quot;}.ion-sad-outline:before{content:&quot;\f4d7&quot;}.ion-scissors:before{content:&quot;\f34b&quot;}.ion-search:before{content:&quot;\f21f&quot;}.ion-settings:before{content:&quot;\f2ad&quot;}.ion-share:before{content:&quot;\f220&quot;}.ion-shuffle:before{content:&quot;\f221&quot;}.ion-skip-backward:before{content:&quot;\f222&quot;}.ion-skip-forward:before{content:&quot;\f223&quot;}.ion-social-android:before{content:&quot;\f225&quot;}.ion-social-android-outline:before{content:&quot;\f224&quot;}.ion-social-angular:before{content:&quot;\f4d9&quot;}.ion-social-angular-outline:before{content:&quot;\f4d8&quot;}.ion-social-apple:before{content:&quot;\f227&quot;}.ion-social-apple-outline:before{content:&quot;\f226&quot;}.ion-social-bitcoin:before{content:&quot;\f2af&quot;}.ion-social-bitcoin-outline:before{content:&quot;\f2ae&quot;}.ion-social-buffer:before{content:&quot;\f229&quot;}.ion-social-buffer-outline:before{content:&quot;\f228&quot;}.ion-social-chrome:before{content:&quot;\f4db&quot;}.ion-social-chrome-outline:before{content:&quot;\f4da&quot;}.ion-social-codepen:before{content:&quot;\f4dd&quot;}.ion-social-codepen-outline:before{content:&quot;\f4dc&quot;}.ion-social-css3:before{content:&quot;\f4df&quot;}.ion-social-css3-outline:before{content:&quot;\f4de&quot;}.ion-social-designernews:before{content:&quot;\f22b&quot;}.ion-social-designernews-outline:before{content:&quot;\f22a&quot;}.ion-social-dribbble:before{content:&quot;\f22d&quot;}.ion-social-dribbble-outline:before{content:&quot;\f22c&quot;}.ion-social-dropbox:before{content:&quot;\f22f&quot;}.ion-social-dropbox-outline:before{content:&quot;\f22e&quot;}.ion-social-euro:before{content:&quot;\f4e1&quot;}.ion-social-euro-outline:before{content:&quot;\f4e0&quot;}.ion-social-facebook:before{content:&quot;\f231&quot;}.ion-social-facebook-outline:before{content:&quot;\f230&quot;}.ion-social-foursquare:before{content:&quot;\f34d&quot;}.ion-social-foursquare-outline:before{content:&quot;\f34c&quot;}.ion-social-freebsd-devil:before{content:&quot;\f2c4&quot;}.ion-social-github:before{content:&quot;\f233&quot;}.ion-social-github-outline:before{content:&quot;\f232&quot;}.ion-social-google:before{content:&quot;\f34f&quot;}.ion-social-google-outline:before{content:&quot;\f34e&quot;}.ion-social-googleplus:before{content:&quot;\f235&quot;}.ion-social-googleplus-outline:before{content:&quot;\f234&quot;}.ion-social-hackernews:before{content:&quot;\f237&quot;}.ion-social-hackernews-outline:before{content:&quot;\f236&quot;}.ion-social-html5:before{content:&quot;\f4e3&quot;}.ion-social-html5-outline:before{content:&quot;\f4e2&quot;}.ion-social-instagram:before{content:&quot;\f351&quot;}.ion-social-instagram-outline:before{content:&quot;\f350&quot;}.ion-social-javascript:before{content:&quot;\f4e5&quot;}.ion-social-javascript-outline:before{content:&quot;\f4e4&quot;}.ion-social-linkedin:before{content:&quot;\f239&quot;}.ion-social-linkedin-outline:before{content:&quot;\f238&quot;}.ion-social-markdown:before{content:&quot;\f4e6&quot;}.ion-social-nodejs:before{content:&quot;\f4e7&quot;}.ion-social-octocat:before{content:&quot;\f4e8&quot;}.ion-social-pinterest:before{content:&quot;\f2b1&quot;}.ion-social-pinterest-outline:before{content:&quot;\f2b0&quot;}.ion-social-python:before{content:&quot;\f4e9&quot;}.ion-social-reddit:before{content:&quot;\f23b&quot;}.ion-social-reddit-outline:before{content:&quot;\f23a&quot;}.ion-social-rss:before{content:&quot;\f23d&quot;}.ion-social-rss-outline:before{content:&quot;\f23c&quot;}.ion-social-sass:before{content:&quot;\f4ea&quot;}.ion-social-skype:before{content:&quot;\f23f&quot;}.ion-social-skype-outline:before{content:&quot;\f23e&quot;}.ion-social-snapchat:before{content:&quot;\f4ec&quot;}.ion-social-snapchat-outline:before{content:&quot;\f4eb&quot;}.ion-social-tumblr:before{content:&quot;\f241&quot;}.ion-social-tumblr-outline:before{content:&quot;\f240&quot;}.ion-social-tux:before{content:&quot;\f2c5&quot;}.ion-social-twitch:before{content:&quot;\f4ee&quot;}.ion-social-twitch-outline:before{content:&quot;\f4ed&quot;}.ion-social-twitter:before{content:&quot;\f243&quot;}.ion-social-twitter-outline:before{content:&quot;\f242&quot;}.ion-social-usd:before{content:&quot;\f353&quot;}.ion-social-usd-outline:before{content:&quot;\f352&quot;}.ion-social-vimeo:before{content:&quot;\f245&quot;}.ion-social-vimeo-outline:before{content:&quot;\f244&quot;}.ion-social-whatsapp:before{content:&quot;\f4f0&quot;}.ion-social-whatsapp-outline:before{content:&quot;\f4ef&quot;}.ion-social-windows:before{content:&quot;\f247&quot;}.ion-social-windows-outline:before{content:&quot;\f246&quot;}.ion-social-wordpress:before{content:&quot;\f249&quot;}.ion-social-wordpress-outline:before{content:&quot;\f248&quot;}.ion-social-yahoo:before{content:&quot;\f24b&quot;}.ion-social-yahoo-outline:before{content:&quot;\f24a&quot;}.ion-social-yen:before{content:&quot;\f4f2&quot;}.ion-social-yen-outline:before{content:&quot;\f4f1&quot;}.ion-social-youtube:before{content:&quot;\f24d&quot;}.ion-social-youtube-outline:before{content:&quot;\f24c&quot;}.ion-soup-can:before{content:&quot;\f4f4&quot;}.ion-soup-can-outline:before{content:&quot;\f4f3&quot;}.ion-speakerphone:before{content:&quot;\f2b2&quot;}.ion-speedometer:before{content:&quot;\f2b3&quot;}.ion-spoon:before{content:&quot;\f2b4&quot;}.ion-star:before{content:&quot;\f24e&quot;}.ion-stats-bars:before{content:&quot;\f2b5&quot;}.ion-steam:before{content:&quot;\f30b&quot;}.ion-stop:before{content:&quot;\f24f&quot;}.ion-thermometer:before{content:&quot;\f2b6&quot;}.ion-thumbsdown:before{content:&quot;\f250&quot;}.ion-thumbsup:before{content:&quot;\f251&quot;}.ion-toggle:before{content:&quot;\f355&quot;}.ion-toggle-filled:before{content:&quot;\f354&quot;}.ion-transgender:before{content:&quot;\f4f5&quot;}.ion-trash-a:before{content:&quot;\f252&quot;}.ion-trash-b:before{content:&quot;\f253&quot;}.ion-trophy:before{content:&quot;\f356&quot;}.ion-tshirt:before{content:&quot;\f4f7&quot;}.ion-tshirt-outline:before{content:&quot;\f4f6&quot;}.ion-umbrella:before{content:&quot;\f2b7&quot;}.ion-university:before{content:&quot;\f357&quot;}.ion-unlocked:before{content:&quot;\f254&quot;}.ion-upload:before{content:&quot;\f255&quot;}.ion-usb:before{content:&quot;\f2b8&quot;}.ion-videocamera:before{content:&quot;\f256&quot;}.ion-volume-high:before{content:&quot;\f257&quot;}.ion-volume-low:before{content:&quot;\f258&quot;}.ion-volume-medium:before{content:&quot;\f259&quot;}.ion-volume-mute:before{content:&quot;\f25a&quot;}.ion-wand:before{content:&quot;\f358&quot;}.ion-waterdrop:before{content:&quot;\f25b&quot;}.ion-wifi:before{content:&quot;\f25c&quot;}.ion-wineglass:before{content:&quot;\f2b9&quot;}.ion-woman:before{content:&quot;\f25d&quot;}.ion-wrench:before{content:&quot;\f2ba&quot;}.ion-xbox:before{content:&quot;\f30c&quot;}</span></td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div>
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.07743s from github-fe141-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" integrity="sha256-fRgMK7V3nst6tdBM6K+ZnnODbc8N8ajES2nGKh3gcy8=" src="https://assets-cdn.github.com/assets/frameworks-7d180c2bb5779ecb7ab5d04ce8af999e73836dcf0df1a8c44b69c62a1de0732f.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-BDAUbaSVMjhV4vOS1TWUkOCuu9dWJZmtOX7J3treTg4=" src="https://assets-cdn.github.com/assets/github-0430146da495323855e2f392d5359490e0aebbd7562599ad397ec9dedade4e0e.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

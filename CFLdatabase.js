@@ -1,4 +1,5 @@
 var mongoose = require("mongoose");
+var ObjectID = require('mongodb').ObjectID;
 mongoose.connect('mongodb://root:cfl123@ds054308.mongolab.com:54308/sportshack')
 
 var db = mongoose.connection;
@@ -93,6 +94,35 @@ function get_game_id_by_name(restaraunt_name, callback) {
     })
 }
 
+function get_events_by_game_id(game_id, callback)
+{
+    if (typeof game_id === String)
+    {
+        game_id = parseInt(game_id);
+    }
+
+    events_collection.find({game_id : game_id}, function (err,data)
+    {
+       if (err)
+       {
+           callback(err);
+           return;
+       }
+
+        data.toArray(callback);
+    });
+}
+
+function get_first_event_by_game_id(game_id, callback)
+{
+    if (typeof game_id != Number)
+    {
+        game_id = parseInt(game_id);
+    }
+
+    events_collection.findOne({game_id : game_id}, callback);
+}
+
 function get_game_id_by_event(event_name, callback) {
     return_object_by_event(event_name, function (err, data) {
         if (err != null) {
@@ -126,15 +156,7 @@ function add_event(obj, callback) {
 // @param id: the id of the object we are looking for
 // @return: returns the object associated with the id
 function return_object_by_id(id, callback) {
-	events_collection.find({"_id" : ObjectId(id)}, function(err, data) {
-		if (err != null) {
-			console.log("Could not retrieve the item")
-			console.log(err)
-			callback(err)
-		} else {
-			data.toArray(callback)
-		}
-	})
+	events_collection.findOne({"_id" : ObjectID(id)},callback);
 }
 
 // Returns the object within our database referenced by restaraunt name
@@ -470,5 +492,6 @@ module.exports = {
     get_capacity_by_event, get_capacity_by_name,
     coordinates_by_name, coordinates_location_by_event,
     return_object_by_name, return_object_by_event,
-    getNumberOfUsersAround, getEventsAroundByLocationAndGameId
+    getNumberOfUsersAround, getEventsAroundByLocationAndGameId,
+    return_object_by_id,get_first_event_by_game_id,get_events_by_game_id
 }

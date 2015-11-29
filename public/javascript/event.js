@@ -11,8 +11,26 @@ app.filter('filterTest', function () {
     };
 })
 
+function getQueryStringValue (key) {
+    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+}
 app.controller('mainCtrl', [
     '$scope', "$http", function ($scope, $http) {
+        $scope.gameEventName = "";
+
+        var targetGameId = getQueryStringValue("id");
+        $http({
+            method: 'POST',
+            url: '/game-events/getGameEventName',
+            data : {
+                gameId : targetGameId
+            }
+        }).then(function successCallback(response) {
+            $scope.gameEventName = response.data.event_name;
+        }, function errorCallback(response) {
+            callBack("Sorry, the service is not available");
+        });
+
         $scope.place = "Hamilton, ON, Canada";
         $scope.showPeopleStats = false;
         $scope.cflQtdPeople = 0;
@@ -100,11 +118,12 @@ app.controller('mainCtrl', [
         function getEventByLocation(options, callBack) {
 
             //callBack("Failed!", "");
+
             //var fakeData = {
             //    "_id": "565a485fc6037020ac326129",
-            //    "restaurant_name": "Endzone Bar & Grill",
-            //    "restaurant_long": -79.807365,
-            //    "restaurant_lat": 43.2311,
+            //    "restaraunt_name": "Endzone Bar & Grill",
+            //    "restaraunt_long": -79.807365,
+            //    "restaraunt_lat": 43.2311,
             //    "capacity_of_restaurant": 75,
             //    "number_of_customers": 75,
             //    "event_name": "Ti-Cats at Home vs. Winnepeg",
@@ -114,14 +133,11 @@ app.controller('mainCtrl', [
             //    "image_url": "http://www.yelp.ca/biz_photos/endzone-bar-and-grill-hamilton?select=uMw-RrUfbdmWV4IKWS4ISg",
             //    "yelp_url": "http://www.yelp.ca/biz/endzone-bar-and-grill-hamilton"
             //};
-            //
             //var result = {eventData: [fakeData], peopleQtd: 100};
-            //
             //callBack(undefined, result);
+            //return;
+            //
 
-            function getQueryStringValue (key) {
-                return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
-            }
             var gameId = getQueryStringValue("id");
 
             $http({
@@ -138,7 +154,7 @@ app.controller('mainCtrl', [
 
             }, function errorCallback(response) {
                 console.log(response);
-               callBack("Sorry, the service is not available.");
+               callBack("Sorry, the service is not available");
             });
             return;
         }
@@ -148,7 +164,7 @@ app.controller('mainCtrl', [
                 if (err.msg) {
                     swal({
                         title: "Error!",
-                        text: "An unknown error occurred." + " (" + err.msg + ")",
+                        text: "An unknown error occurred" + " (" + err.msg + ")",
                         type: "error",
                         confirmButtonText: "OK"
                     });
@@ -156,7 +172,7 @@ app.controller('mainCtrl', [
                 else {
                     swal({
                         title: "Error!",
-                        text: "An unknown error occurred." + " (" + err.toString() + ")",
+                        text: "An unknown error occurred" + " (" + err.toString() + ")",
                         type: "error",
                         confirmButtonText: "OK"
                     });
@@ -165,14 +181,15 @@ app.controller('mainCtrl', [
             }
 
             console.log(data);
-            return;
 
             $scope.cflQtdPeople = data.peopleQtd;
             $scope.showPeopleStats = true;
             $scope.allEvents = data.eventData;
             $scope.rebuildMarkers();
             try {
-                $scope.$apply();
+                if ($scope.$root.$$phase != '$apply' && $scope.$root.$$phase != '$digest') {
+                    $scope.$apply();
+                }
             }
             catch (ex) {
 
@@ -188,16 +205,21 @@ app.controller('mainCtrl', [
             $scope.lastSelected = undefined;
             $scope.allEvents.forEach(function (obj,index) {
                 obj.selected = false;
+                //    "restaurant_lat": 43.2311,
 
-                var image = 'images/beachflag.png'
+                //var pos = new google.maps.LatLng(obj.restaurant_lat, obj.restaurant_long);
+                var pos =  new google.maps.LatLng(obj.restaraunt_lat, obj.restaraunt_long);
+                console.log(pos.lat() + " - " + pos.lng());
+                var image = '/images/beachflag.png'
                 var newMarker = new google.maps.Marker({
                     map: map,
                     icon: image,
-                    title: obj.restaurant_name,
+                    title: obj.restaraunt_name,
                     draggable: true,
-                    position: {lat: obj.restaurant_lat, lng: obj.restaurant_long}
+                    //position: new google.maps.LatLng(obj.restaurant_lat, obj.restaurant_long)
+                    position:pos
                 });
-
+                newMarker.setMap(map);
                 $scope.customMarkers.push(newMarker);
                 newMarker.addListener('click', function () {
                     if ($scope.lastSelected)
@@ -216,7 +238,6 @@ app.controller('mainCtrl', [
                             focusOnSelectedEvent();
                         }
                         $scope.$apply();
-
 
                     },1);
 

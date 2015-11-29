@@ -44,6 +44,10 @@
             quotes: none;
         }
 
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+
         blockquote:before, blockquote:after,
         q:before, q:after {
             content: '';
@@ -58,7 +62,8 @@
         .page-wrap {
             min-height: 100%;
             /* equal to footer height */
-            margin-bottom: -30px;
+            margin-bottom: -45px;
+            height: auto !important
         }
 
         .page-wrap:after {
@@ -75,7 +80,6 @@
         }
 
         .site-footer, .page-wrap:after {
-            height: 30px;
         }
 
         .site-footer {
@@ -91,22 +95,66 @@
 <body ng-app="sports">
 
 <div class="page-wrap" id="myctrl" ng-controller="mainCtrl">
-    <div style="height: 100px;width: 100%;background: red">
+    <nav class="navbar navbar-custom navbar-fixed-top" style="background-color:#d42b2b;">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="/">
+                    <span class="light" style="color:white;">Back to Home</span>
+                </a>
+            </div>
 
-    </div>
-    <div class="container-fuild" style="height: 500px; margin:0 auto; width: 960px;">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="navbar-brand" style="color:white;">
+                        <!--
+                        <ul class="no-js">
+                          <li>
+                            <a href="#" class="clicker">Profile</a>
+                            <ul>
+                              <li><a> Dashboard</a></li>
+                              <li><a href="#">Settings</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Help</a></li>
+                              <li><a href="#">Sign out</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        -->
+                        Edward Zhou
+                    </li>
 
-        <div class="row" style="height:100px;background: gray;">
-            <h1>TI CATS VS TEST SHOWINGS</h1>
-            <span>NEAR YOU:</span>
-            <span>AT:</span>
+                    <li>
+                        <img src="/images/facebook.ico" width="49px" height="49px">
+
+                    </li>
+                    <li style="margin:3px;">
+                        <img src="/images/twitter.png" width="42px" height="42px">
+                    </li>
+
+                    <li style="margin:3px;">
+                        <img src="/images/instagram.png" width="42px" height="42px">
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="row" style="height:40px;background: yellow;">
+        <!-- /.container -->
+    </nav>
+    <div class="container-fluid" style="height: 600px; margin:0 10%;padding-top:50px">
+
+        <div class="row" style="height:140px;background: #e3e3e3;padding-left:10px">
+            <h1 style="font-weight: bolder;margin-top:28px; color:gray; font-size: 40px;" ng-cloak>{{gameEventName}}</h1>
+        </div>
+        <div class="row" style="height:40px;background: #9A1717;">
 
             <div class="col-md-3">
-                <h4>FIND BY LOCATION:</h4>
+                <h4 class="pull-right">
+                    <small style="color:white;"><b>FIND BY LOCATION</b></small>
+                </h4>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9" style="padding:0 2px 0 0">
 
 
                 <div class="input-group" style="padding: 3px 0">
@@ -127,37 +175,52 @@
             <!--<li><a href="#">Places</a></li>-->
             <!--</ul>-->
 
-            <div class="col-md-3" style="height: 100%;background:purple;padding:0;margin:0;">
-                <ul id="listEvents" style="overflow-x: hidden; overflow-y:auto; list-style: none; list-style-type: none;padding:0;margin:0">
-                    <li ng-repeat="obj in allEvents" ng-selected="obj.selected">
-                        <div class="media" style="padding:10px;" ng-style="{background : ((obj.selected | filterTest) && 'teal') || ''}">
-                            <div class="media-left"><a href="#"> <img class="media-object" data-src="holder.js/64x64"
-                                                                      alt="64x64"
-                                                                      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTE1MjllMmM1NCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MTUyOWUyYzU0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuMzk2ODc1Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-                                                                      data-holder-rendered="true"
-                                                                      style="width: 64px; height: 64px;"> </a></div>
-                            <div class="media-body"><h4 class="media-heading">Media heading</h4> Cras sit amet nibh
-                                libero, in
-                                gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio,
+            <div class="col-md-3" style="height: 100%;background:white;padding:0;margin:0; border: 1px solid black;">
+                <div>
+                    <h3 style="text-align: center"><b>PLACES TO GO</b></h3>
+                </div>
+                <div ng-hide="allEvents.length">
+                    <h4 style="margin: 5px;padding: 5px;">Sorry, currently no events are available in this area.</h4>
+                </div>
+                <div ng-show="allEvents.length" ng-cloak>
+                    <ul id="listEvents"
+                        style="overflow-x: hidden; overflow-y:auto; list-style: none; list-style-type: none;padding:0;margin:0">
+
+                        <li ng-repeat="obj in allEvents" ng-selected="obj.selected;"
+                            style="cursor: hand; background: transparent">
+                            <div class="media" style="padding:10px;"
+                                 ng-style="{background : ((obj.selected | filterTest) && '#e3e3e3') || ''}">
+                                <div class="media-left"><a href="/gameEventsPage.html?id={{obj._id}}"> <img
+                                        class="media-object"
+                                        alt="64x64"
+                                        src="{{obj.image_url}}"
+                                        style="width: 64px; height: 64px;"> </a></div>
+                                <div class="media-body"><h4 class="media-heading">{{obj.restaraunt_name}}</h4>
+                                    <a href="/gameEventsPage.html?id={{obj._id}}">more details..</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
 
 
                 <div class="outer">
-                    <div ng-show="showPeopleStats">
-                        <h5 style="margin: 10px 5px">DID YOU KNOW?</h5>
+                    <div ng-show="showPeopleStats" ng-cloak>
+                        <i>
+                            <h5 style="margin: 10px 5px 5px 5px"><b>DID YOU KNOW?</b></h5>
 
-                        <div style="padding: 5px; text-align: left">
-                            <span>There are </span>
-                            <span>{{cflQtdPeople}}</span>
-                            <span> fans of CFL on this area!</span>
-                        </div>
+                            <div style="padding: 5px; text-align: left">
+
+                                <span>There are </span>
+                                <span style="font-size: 1.5em;"><b>{{cflQtdPeople}}</b></span>
+                                <span> fans of CFL on this area!</span>
+
+                            </div>
+                        </i>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9" style="height:100%;background: teal;">
+            <div class="col-md-9" style="height:100%;padding:0;background: ; border: 1px solid transparent">
 
 
                 <div id="map" style="width:100%;height:100%;">
@@ -169,11 +232,12 @@
         </div>
 
     </div>
-
 </div>
 
 <footer class="panel-footer push">
-
+    <div class="container text-center">
+        <p>2015 <span class="fa fa-copyright">&#174;</span> Copyright</p>
+    </div>
 </footer>
 
 
@@ -189,8 +253,7 @@
     var geocoder = {};
     var searchBox = {};
     var inputBox = {};
-    function focusOnSelectedEvent()
-    {
+    function focusOnSelectedEvent() {
         $("#listEvents").find("li:selected").focus();
     }
 

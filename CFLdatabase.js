@@ -1,13 +1,16 @@
 var mongoose = require("mongoose");
-mongoose.connect('localhost', 27017)
+mongoose.connect('mongodb://root:cfl123@ds054308.mongolab.com:54308/sportshack')
 
 var db = mongoose.connection;
 var events_collection = db.collection("events_collection")
 var user_ti = db.collection("THE NAME OF THE TI-CATS")
 
+// Adds in a new event to the database given the following attributes 
+
 // class Event {
-// 	constructor(restaraunt_name, restaraunt_long, restaraunt_lat, capacity_of_restaraunt, number_of_customers, event_name, image_url, yelp_url) {
+// 	constructor(restaraunt_name, restaraunt_long, restaraunt_lat, capacity_of_restaraunt, number_of_customers, event_name, game_id, image_url, yelp_url) {
 // 		this.restaraunt_name = restaraunt_name
+//		this.game_id = game_id
 // 		this.restaraunt_long = 	restaraunt_long
 // 		this.restaraunt_lat = restaraunt_lat
 // 		ths.capacity_of_restaraunt = capacity_of_restaraunt
@@ -18,8 +21,37 @@ var user_ti = db.collection("THE NAME OF THE TI-CATS")
 // 	}
 // }
 
+//  Returns the event_id of an event given a name
+//	@param restaraunt_name: the name of the restaraunt
+//	@return: the event id
+function get_game_id_by_name(restaraunt_name, callback) {
+	return_object_by_name(restaraunt_name, function(err, data) {
+		if (err != null) {
+			console.log(err)
+			callback(err)
+		} else {
+			var event_obj = data
+			var game_id = event_obj[0]["event_id"]
+			callback(err, game_id)
+		}
+	})
+}
 
-// Adds in a new event to the database given the following attributes 
+function get_game_id_by_event(event_name, callback) {
+	return_object_by_event(event_name, function(err, data) {
+		if (err != null) {
+			console.log(err)
+			callback(err)
+		} else {
+			var event_obj = data
+			var game_id = event_obj[0]["event_id"]
+			callback(err, game_id)
+		}
+	})
+}
+
+
+// Adds in a new event to the database given the following attributes
 // @param multiple fields to identify a new event
 // @return void
 function add_event(obj, callback) {
@@ -28,7 +60,7 @@ function add_event(obj, callback) {
 		if (err != null) {
 			console.log("There was an error in adding the object.")
 			console.log(err)
-			callback(err) 
+			callback(err)
 		} else {
 			callback(err, result)
 		}
@@ -160,7 +192,7 @@ function get_image_url_by_event(event_name, callback) {
 			var image_url = event_obj[0]["image_url"]
 			callback(err, image_url)
 		}
-	}) 
+	})
 }
 
 
@@ -178,11 +210,11 @@ function get_image_url_by_name(restaraunt_name, callback) {
 			var image_url = event_obj[0]["image_url"]
 			callback(err, image_url)
 		}
-	}) 
+	})
 }
 
 
-// Get the Yelp URL for a restaraunt 
+// Get the Yelp URL for a restaraunt
 // @param event_name: the name of an event
 // @return: a Yelp URL
 function get_yelp_url_by_event(event_name, callback) {
@@ -196,11 +228,11 @@ function get_yelp_url_by_event(event_name, callback) {
 			var yelp_url = event_obj[0]["yelp_url"]
 			callback(err, yelp_url)
 		}
-	}) 
+	})
 }
 
 
-// Get the Yelp URL for a restaraunt 
+// Get the Yelp URL for a restaraunt
 // @param restaraunt_name: the name of a restaraunt
 // @return: a Yelp URL
 function get_yelp_url_by_name(restaraunt_name, callback) {
@@ -220,7 +252,7 @@ function get_yelp_url_by_name(restaraunt_name, callback) {
 
 // Get the number of people who are attending an event
 // @param event_name: name of an event
-// @return: the number of people attending 
+// @return: the number of people attending
 function get_customers_by_event(event_name, callback) {
 
 	return_object_by_event(event_name, function(err, data) {
@@ -240,7 +272,7 @@ function get_customers_by_event(event_name, callback) {
 
 // Get the number of people who are attending an event
 // @param restaraunt_name: name of a restaraunt
-// @return: the number of people attending 
+// @return: the number of people attending
 function get_customers_by_name(restaraunt_name, callback) {
 	return_object_by_name(restaraunt_name, function(err, data) {
 		if (err != null) {
@@ -252,7 +284,7 @@ function get_customers_by_name(restaraunt_name, callback) {
 			//console.log(event_obj);
 			var number_of_customers = event_obj[0]["number_of_customers"]
 			callback(err, number_of_customers);
-		
+
 		}
 	})
 
@@ -277,7 +309,7 @@ function change_customers_by_name(restaraunt_name, difference, callback) {
 		var new_number_customers = event_obj[0]["number_of_customers"] + difference
 
 		events_collection.update(
-			{"restaraunt_name" : restaraunt_name}, 
+			{"restaraunt_name" : restaraunt_name},
 			{$set : {"number_of_customers" : new_number_customers}},
 			function(err, results) {
 				if (err) {
@@ -291,11 +323,11 @@ function change_customers_by_name(restaraunt_name, difference, callback) {
 				}
 			})
 		}
-	})	
+	})
 }
 
 
-//FIGURE THIS CRAP OUT 
+//FIGURE THIS CRAP OUT
 // Changes the number of people attending an event
 // @param event_name: name of the event
 // @param difference: the difference to the number of customers
@@ -314,7 +346,7 @@ function change_customers_by_event(event_name, difference, callback) {
 		var new_number_customers = event_obj[0]["number_of_customers"] + difference
 
 		events_collection.update(
-			{"event_name" : event_name}, 
+			{"event_name" : event_name},
 			{$set : {"number_of_customers" : new_number_customers}},
 			function(err, results) {
 				if (err) {
@@ -328,12 +360,12 @@ function change_customers_by_event(event_name, difference, callback) {
 				}
 			})
 		}
-	})	
+	})
 }
 
 
 // Returns a list of all restaraunts
-// @param: none 
+// @param: none
 // @return: an array of restaraunts
 function return_all_restaraunts(callback) {
 	events_collection.find({}, {restaraunt_name : 1}, function(err, data) {
@@ -364,7 +396,7 @@ function return_all_events(callback) {
 }
 
 
-module.exports = {add_event, return_all_events, return_all_restaraunts, 
+module.exports = {add_event, return_all_events, return_all_restaraunts,
 				change_customers_by_name, change_customers_by_event,
 				get_customers_by_name, get_customers_by_event,
 				get_yelp_url_by_name, get_yelp_url_by_event,
@@ -373,4 +405,3 @@ module.exports = {add_event, return_all_events, return_all_restaraunts,
 				coordinates_by_name, coordinates_location_by_event,
 				return_object_by_name, return_object_by_event,
 				}
-

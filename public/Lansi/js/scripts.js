@@ -4,6 +4,7 @@ $('body').scrollspy({
   offset: 52
 });
 
+var event_id = undefined;
 /* smooth scrolling sections */
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -13,24 +14,22 @@ $('a[href*=#]:not([href=#])').click(function() {
         $('html,body').animate({
           scrollTop: target.offset().top - 50
         }, 800);
-        
+
         if (this.hash=="#section1") {
             $('.scroll-up').hide();
         }
         else {
             $('.scroll-up').show();
         }
-        
-        
+
+
         // activte animations in this section
         target.find('.animate').delay(1200).addClass("animated");
         setTimeout(function(){
             target.find('.animated').removeClass("animated");
         },2000);
-        
+
         return false;
       }
     }
 });
-
-

@@ -5,20 +5,6 @@ var db = mongoose.connection;
 var events_collection = db.collection("events_collection")
 var user_ti = db.collection("THE NAME OF THE TI-CATS")
 
-// class Event {
-// 	constructor(restaraunt_name, restaraunt_long, restaraunt_lat, capacity_of_restaraunt, number_of_customers, event_name, image_url, yelp_url) {
-// 		this.restaraunt_name = restaraunt_name
-// 		this.restaraunt_long = 	restaraunt_long
-// 		this.restaraunt_lat = restaraunt_lat
-// 		ths.capacity_of_restaraunt = capacity_of_restaraunt
-// 		this.number_of_customers = number_of_customers
-// 		this.event_name = event_name
-// 		this.image_url = image_url
-// 		this.yelp_url = yelp_url
-// 	}
-// }
-
-
 // Adds in a new event to the database given the following attributes 
 // @param multiple fields to identify a new event
 // @return void

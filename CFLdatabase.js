@@ -8,8 +8,9 @@ var user_ti = db.collection("THE NAME OF THE TI-CATS")
 // Adds in a new event to the database given the following attributes 
 
 // class Event {
-// 	constructor(restaraunt_name, restaraunt_long, restaraunt_lat, capacity_of_restaraunt, number_of_customers, event_name, image_url, yelp_url) {
+// 	constructor(restaraunt_name, restaraunt_long, restaraunt_lat, capacity_of_restaraunt, number_of_customers, event_name, event_id, image_url, yelp_url) {
 // 		this.restaraunt_name = restaraunt_name
+//		this.event_id = event_id
 // 		this.restaraunt_long = 	restaraunt_long
 // 		this.restaraunt_lat = restaraunt_lat
 // 		ths.capacity_of_restaraunt = capacity_of_restaraunt
@@ -19,6 +20,35 @@ var user_ti = db.collection("THE NAME OF THE TI-CATS")
 // 		this.yelp_url = yelp_url
 // 	}
 // }
+
+//  Returns the event_id of an event given a name
+//	@param restaraunt_name: the name of the restaraunt
+//	@return: the event id
+function get_event_id_by_name(restaraunt_name, callback) {
+	return_object_by_name(restaraunt_name, function(err, data) {
+		if (err != null) {
+			console.log(err)
+			callback(err)
+		} else {
+			var event_obj = data
+			var event_id = event_obj[0]["event_id"]
+			callback(err, event_id)
+		}
+	})
+}
+
+function get_event_id_by_event(event_name, callback) {
+	return_object_by_event(event_name, function(err, data) {
+		if (err != null) {
+			console.log(err)
+			callback(err)
+		} else {
+			var event_obj = data
+			var event_id = event_obj[0]["event_id"]
+			callback(err, event_id)
+		}
+	})
+}
 
 
 // Adds in a new event to the database given the following attributes

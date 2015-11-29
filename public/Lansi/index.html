@@ -46,11 +46,38 @@
 
                 var restaurantCapacityTyped = $("#txtRestaurantCapacity").val();
                 $("#lblRestaurantCapacity").html(restaurantCapacityTyped);
-                
+
                 $("y").show(1000);
+
+
+
+                var new_event = {"restaraunt_name" : restaurantNameTyped,
+                             "restaraunt_long" : "",
+                             "restaraunt_lat" : "",
+                             "capacity_of_restaraunt" : restaurantCapacityTyped,
+                             "number_of_customers" : "0",
+                             "event_name" : teamsPlayingTyped,
+                             "image_url" : "",
+                             "yelp_url" : ""
+                           };
+                console.log(new_event);
+                $.ajax
+                ({
+                  type: "POST",
+                  url: '/create_event',
+                  data: new_event,
+                  success: function(){
+                    console.log("AJAX call success!");
+                  },
+                  dataType: JSON
+                });
+
+
+
+
             });
         });
-        
+
     });
 
     </script>
@@ -64,16 +91,16 @@
         <h1 class="text-center">Host your event!</h1>
         <h2 class="text-center lato animate slideInDown">Enter restaurant information:</h2>
         <p class="text-center">
-            
+
         <form action="form.html" method="post" autocomplete="on">
         <fieldset>
-        <label for="firstName">First name:</label> 
+        <label for="firstName">First name:</label>
             <input id="txtFirstName" type="text" placeholder="eg. Jane" ng-model="firstName">
             <br>
-        <label for="lastName">Last name:</label> 
+        <label for="lastName">Last name:</label>
             <input id="txtLastName" type="text" placeholder="eg. Joe" ng-model="lastName">
             <br>
-        <label for="restaurantName">Restaurant name:</label> 
+        <label for="restaurantName">Restaurant name:</label>
             <input id="txtRestaurantName" list="restaurants" name="restaurant" placeholder="Restaurant name" ng-model="restaurantName">
             <datalist id="restaurants">
                 <option value="McDonald's">
@@ -81,7 +108,7 @@
                 <option value="Joya Sushi">
             </datalist>
             <br>
-        <label for="restaurantAddress">Restaurant address:</label> 
+        <label for="restaurantAddress">Restaurant address:</label>
             <input id="txtRestaurantAddress" list="rAddress" name="address" placeholder="Restaurant address" ng-model="restaurantAddress">
                 <datalist id="rAddress">
                     <option value="120 King Street West">
@@ -89,7 +116,7 @@
                     <option value="1630 Main St W">
                 </datalist>
             <br>
-        
+
         <label for="teamNames">Teams playing:</label>
             <select id="txtTeamsPlaying" class="label" name="teams">
                 <option value=" "> </option>
@@ -103,7 +130,7 @@
         <label for="gameTime"> Game time:</label>
             <input id="txtGameTime" type="text" placeholder="7pm" ng-model="gameTime">
             <br>
-        <label for="restaurantCapacity">Capacity of restaurant:</label> 
+        <label for="restaurantCapacity">Capacity of restaurant:</label>
             <input id="txtRestaurantCapacity" type="text" placeholder="# of seats" ng-model="restaurantCapacity">
         <br>
 
@@ -119,11 +146,11 @@
                      <h1 class="text-center">Your event has been created!</h1>
         <h2 style="display:inline;" id="lblFirstName"></h2>&nbsp;<h2 style="display:inline;" id="lblLastName"> </h2>
         <p class="text-center">
-            
+
         <form action="form.html" method="post" autocomplete="on">
         <fieldset>
-        
-        <label for="lblRestaurantName">Restaurant name:</label> 
+
+        <label for="lblRestaurantName">Restaurant name:</label>
             <h3 style="display:inline;" id="lblRestaurantName" ng-model="restaurantName"></h3>
             <datalist id="restaurants">
                 <option value="McDonald's">
@@ -131,10 +158,10 @@
                 <option value="Joya Sushi">
             </datalist>
             <br>
-        <label for="lblRestaurantAddress">Restaurant address:</label> 
+        <label for="lblRestaurantAddress">Restaurant address:</label>
             <h3 style="display:inline" id="lblRestaurantAddress" ng-model="restaurantAddress"></h3>
             <br>
-        
+
         <label for="teamNames">Teams playing:</label>
             <h3 style="display:inline" id="lblTeamsPlaying" ng-model="teamNames"></h3>
             <br>
@@ -144,7 +171,7 @@
         <label for="gameTime">Game time:</label>
             <h3 style="display:inline" id="lblGameTime" ng-model="gameTime"></h3>
             <br>
-        <label for="restaurantCapacity">Capacity of restaurant:</label> 
+        <label for="restaurantCapacity">Capacity of restaurant:</label>
             <h3 style="display:inline" id="lblRestaurantCapacity" ng-model="restaurantCapacity"></h3>
         <br>
 
@@ -157,19 +184,19 @@
         </y>
     </div>
     <a href="#section2">
-        
+
             <span>
                 <i class="fa fa-angle-down fa-2x"></i>
             </span>
-        
+
     </a>
 </section>
 
 
-    
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
+
     <script src="js/scripts.js"></script>
   </body>
 </html>

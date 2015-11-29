@@ -4,13 +4,20 @@
 var app = angular.module('sports', []);
 
 
-app.factory('geolocation', function getLocation() {
-    return geolocation;
+app.filter('filterTest', function () {
+    return function (obj) {
+        console.log(obj);
+        return obj;
+    };
 })
 
 app.controller('mainCtrl', [
     '$scope', function ($scope) {
         $scope.place = "Hamilton, ON, Canada";
+        $scope.showPeopleStats = false;
+        $scope.cflQtdPeople = 0;
+
+        $scope.customMarkers = [];
 
         function getLocation(storeLocation, showError) {
             if (navigator.geolocation) {
@@ -82,12 +89,117 @@ app.controller('mainCtrl', [
 
         $scope.mapLoaded = function () {
             $scope.isLoaded = true;
+            $scope.locationChanged();
         };
         $scope.retrieveLocation = function () {
             getLocation(storeLocation, showError);
-        }
-        $scope.locationChanged = function () {
+        };
 
+        function getEventByLocation(options, callBack) {
+
+            //callBack("Failed!", "");
+            var fakeData = {
+                "_id": "565a485fc6037020ac326129",
+                "restaurant_name": "Endzone Bar & Grill",
+                "restaurant_long": -79.807365,
+                "restaurant_lat": 43.2311,
+                "capacity_of_restaurant": 75,
+                "number_of_customers": 75,
+                "event_name": "Ti-Cats at Home vs. Winnepeg",
+                "Date": "8/9/2016",
+                "Time": "5:00:00 PM",
+                "event_id": 9,
+                "image_url": "http://www.yelp.ca/biz_photos/endzone-bar-and-grill-hamilton?select=uMw-RrUfbdmWV4IKWS4ISg",
+                "yelp_url": "http://www.yelp.ca/biz/endzone-bar-and-grill-hamilton"
+            };
+
+            var result = {eventData: [fakeData], peopleQtd: 100};
+
+            callBack(undefined, result);
+            return;
+        }
+
+        function processEventResults(err, data) {
+            if (err) {
+                if (err.msg) {
+                    swal({
+                        title: "Error!",
+                        text: "An unknown error occurred." + " (" + err.msg + ")",
+                        type: "error",
+                        confirmButtonText: "OK"
+                    });
+                }
+                else {
+                    swal({
+                        title: "Error!",
+                        text: "An unknown error occurred." + " (" + err.toString() + ")",
+                        type: "error",
+                        confirmButtonText: "OK"
+                    });
+                }
+                return;
+            }
+
+            $scope.cflQtdPeople = data.peopleQtd;
+            $scope.showPeopleStats = true;
+            $scope.allEvents = data.eventData;
+            $scope.rebuildMarkers();
+            try {
+                $scope.$apply();
+            }
+            catch (ex) {
+
+            }
+
+        }
+
+        $scope.rebuildMarkers = function () {
+            $scope.customMarkers.forEach(function (marker) {
+                marker.setMap(null);
+            });
+            $scope.customMarkers = [];
+            $scope.lastSelected = undefined;
+            $scope.allEvents.forEach(function (obj,index) {
+                obj.selected = false;
+
+                var image = 'images/beachflag.png'
+                var newMarker = new google.maps.Marker({
+                    map: map,
+                    icon: image,
+                    title: obj.restaurant_name,
+                    draggable: true,
+                    position: {lat: obj.restaurant_lat, lng: obj.restaurant_long}
+                });
+
+                $scope.customMarkers.push(newMarker);
+                newMarker.addListener('click', function () {
+                    if ($scope.lastSelected)
+                    {
+                        $scope.lastSelected.selected = false;
+                    }
+                    var newArray = $scope.allEvents.slice();
+
+                    setTimeout(function ()
+                    {
+                        obj.selected = true;
+                        $scope.lastSelected = obj;
+                        $scope.allEvents = newArray;
+                        if (focusOnSelectedEvent)
+                        {
+                            focusOnSelectedEvent();
+                        }
+                        $scope.$apply();
+
+
+                    },1);
+
+
+                })
+            });
+        };
+
+        $scope.locationChanged = function () {
+            getEventByLocation({lat: $scope.lat, long: $scope.long}, processEventResults);
         }
     }
 ])

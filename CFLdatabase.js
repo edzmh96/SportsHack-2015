@@ -23,6 +23,11 @@ var user_ti = db.collection("ticats_users")
 
 function getEventsAroundByLocationAndGameId(obj, callback) {
     var items = [obj.long, obj.lat];
+    if (typeof obj.gameId !== Number)
+    {
+        obj.gameId = parseInt(obj.gameId);
+    }
+
     events_collection.find({
         loc: {
             $near: {
@@ -121,7 +126,7 @@ function add_event(obj, callback) {
 // @param id: the id of the object we are looking for
 // @return: returns the object associated with the id
 function return_object_by_id(id, callback) {
-	events_collection.find({"_id" : id}, function(err, data) {
+	events_collection.find({"_id" : ObjectId(id)}, function(err, data) {
 		if (err != null) {
 			console.log("Could not retrieve the item")
 			console.log(err)

@@ -134,7 +134,7 @@ app.controller('mainCtrl', [
                 }
             }).then(function successCallback(response) {
 
-                callBack(undefined, response);
+                callBack(undefined, response.data);
 
             }, function errorCallback(response) {
                 console.log(response);

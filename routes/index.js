@@ -34,8 +34,8 @@ router.post('/create_event', function(req, res, next) {
       res.status(404);
       res.end();
   	} else {
-      res.write(data);
-      res.end();
+      console.log(data.ops[2]);
+      res.send(data);
   		console.log("Succesfully added event.")
   	}
   })

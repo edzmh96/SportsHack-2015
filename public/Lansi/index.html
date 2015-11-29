@@ -18,7 +18,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
+
     $(document).ready(function(){
+
 
         $("hideButton").click(function(){
             $("z").hide(1000, function(){
@@ -66,11 +68,18 @@
                   type: "POST",
                   url: '/create_event',
                   data: new_event,
-                  success: function(){
+                  dataType: "JSON"
+                }).done(function (res)
+                  {
                     console.log("AJAX call success!");
-                  },
-                  dataType: JSON
-                });
+                    console.log(res);
+
+                    $("#linkEventPage").attr("href", "eventPage?id=" + res.insertedIds[0]);
+
+                  }).fail(function(err){
+                    console.log(err);
+                    alert("Please try again!");
+                  });
 
 
 
@@ -174,6 +183,8 @@
         <label for="restaurantCapacity">Capacity of restaurant:</label>
             <h3 style="display:inline" id="lblRestaurantCapacity" ng-model="restaurantCapacity"></h3>
         <br>
+        <!-- TODO: Perhaps change this to a button -->
+        <a href="#" id="linkEventPage">View Event</a>
 
         </fieldset>
 

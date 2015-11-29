@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var gameEvent = require('./routes/gameEvent')
+var gameEvents = require('./routes/gameEvents')
 var app = express();
 
 // view engine setup
@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/game-event', gameEvent);
+app.use('/game-events', gameEvents);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

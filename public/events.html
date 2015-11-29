@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <script src="sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert.css">
+    <style>
+        div {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .page-wrap {
+            min-height: 100%;
+            /* equal to footer height */
+            margin-bottom: -30px;
+        }
+
+        .page-wrap:after {
+            content: "";
+            display: block;
+        }
+
+        .site-footer, .page-wrap:after {
+            height: 30px;
+        }
+
+        .site-footer {
+            background: orange;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body ng-app="sports">
+
+<div class="page-wrap" id="myctrl" ng-controller="mainCtrl">
+    <div style="height: 100px;width: 100%;background: red">
+
+    </div>
+    <div class="container-fuild" style="height: 500px; margin:0 auto; width: 960px;">
+
+        <div class="row" style="height:100px;background: gray;">
+            <h1>TI CATS VS TEST SHOWINGS</h1>
+            <span>NEAR YOU:</span>
+            <span>AT:</span>
+        </div>
+        <div class="row" style="height:40px;background: yellow;">
+
+            <div class="col-md-3">
+                <h4>FIND BY LOCATION:</h4>
+            </div>
+            <div class="col-md-9">
+
+
+                <div class="input-group"  style="padding: 3px 0" >
+
+                    <input class="form-control" ng-model="place" id="pac-input" type="text" placeholder="Search Box">
+                    </input>
+                    <span class="input-group-addon" ><a href="#" ng-click="retrieveLocation()" title="use my current location" class="glyphicon glyphicon-screenshot"></a></span>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row" style="height: 100%;background: mintcream;">
+            <!--<ul class="nav nav-tabs">-->
+                <!--<li class="active"><a href="#">Events</a></li>-->
+                <!--<li><a href="#">Places</a></li>-->
+            <!--</ul>-->
+
+            <div class="col-md-3" style="height: 100%;background:purple;">
+
+            </div>
+            <div class="col-md-9" style="height:100%;background: teal;">
+
+
+                <div id="map" style="width:100%;height:100%;">
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="site-footer">
+
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+<script>
+
+    var map = {};
+    var geocoder = {};
+    var searchBox= {};
+    var inputBox = {};
+    function initMap() {
+        var myLatLng = {lat: 43.2500, lng: -79.8667};
+
+         map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng,
+            streetViewControl: false
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var circle = new google.maps.Circle({
+            map: map,
+            radius: 750,    // 10 miles in metres
+            fillColor: '#AA0000'
+        });
+        circle.bindTo('center', marker, 'position');
+        // Create the search box and link it to the UI element.
+        inputBox = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(inputBox);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function () {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        markers.push(marker);
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function () {
+            var places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            // Clear out the old markers.
+            markers.forEach(function (marker) {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            // For each place, get the icon, name and location.
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function (place) {
+                var icon = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25)
+                };
+
+                var newMarker = new google.maps.Marker({
+                    map: map,
+                    icon: icon,
+                    title: place.name,
+                    draggable: true,
+                    position: place.geometry.location
+                });
+                circle.setMap(null);
+                circle = new google.maps.Circle({
+                    map: map,
+                    radius: 750,
+                    fillColor: '#AA0000'
+                });
+                circle.bindTo('center', newMarker, 'position');
+
+                // Create a marker for each place.
+                markers.push(newMarker);
+
+//                if (place.geometry.viewport) {
+                    // Only geocodes have viewport.
+//                    bounds.union(place.geometry.viewport);
+//                } else {
+//                    bounds.extend(place.geometry.location);
+//                }
+            });
+            map.fitBounds(circle.getBounds());
+            var scope = angular.element(controllerElement).scope();
+            if (scope && scope.isLoaded)
+            {
+                scope.locationChanged();
+            }
+        });
+        geocoder = new google.maps.Geocoder;
+
+        var controllerElement = document.getElementById("myctrl");
+        var scope = angular.element(controllerElement).scope();
+        scope.mapLoaded();
+    }
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArEnkPX8RTQdsmgqsgokZ3PdTk7dcme1Q&signed_in=false&libraries=places&callback=initMap"></script>
+
+<script src="javascript/event.js"></script>
+</body>
+</html>

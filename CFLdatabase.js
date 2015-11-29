@@ -5,6 +5,8 @@ var db = mongoose.connection;
 var events_collection = db.collection("events_collection")
 var user_ti = db.collection("THE NAME OF THE TI-CATS")
 
+// Adds in a new event to the database given the following attributes 
+
 // class Event {
 // 	constructor(restaraunt_name, restaraunt_long, restaraunt_lat, capacity_of_restaraunt, number_of_customers, event_name, image_url, yelp_url) {
 // 		this.restaraunt_name = restaraunt_name

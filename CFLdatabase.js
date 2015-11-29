@@ -118,6 +118,19 @@ function add_event(obj, callback) {
     })
 }
 
+// @param id: the id of the object we are looking for
+// @return: returns the object associated with the id
+function return_object_by_id(id, callback) {
+	events_collection.find({"_id" : id}, function(err, data) {
+		if (err != null) {
+			console.log("Could not retrieve the item")
+			console.log(err)
+			callback(err)
+		} else {
+			data.toArray(callback)
+		}
+	})
+}
 
 // Returns the object within our database referenced by restaraunt name
 // @param restaraunt_name: the name of the restaraunt

@@ -4,7 +4,7 @@ import pymongo
 import json
 from pymongo import MongoClient
 
-client = MongoClient(["mongodb://root:cfl123@ds054308.mongolab.com:54308/sportshack"])
+client = MongoClient(["STUB LINK"])
 db = client.eventDatabase
 event_collection = db.event_collection # a collection of events avaliable 
 

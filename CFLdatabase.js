@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var ObjectID = require('mongodb').ObjectID;
-mongoose.connect('mongodb://root:cfl123@ds054308.mongolab.com:54308/sportshack')
+mongoose.connect('STUB LINK')
 
 var db = mongoose.connection;
 var events_collection = db.collection("events_collection")
